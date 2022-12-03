@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dada/workspace/sylar/http/http.h
+memory
+-
+ostream
+-
+sstream
+-
+string
+-
+map
+-
+boost/lexical_cast.hpp
+-
+http11_parser.h
+/home/dada/workspace/sylar/http/http11_parser.h
+httpclient_parser.h
+/home/dada/workspace/sylar/http/httpclient_parser.h
+
+/home/dada/workspace/sylar/http/http11_common.h
+sys/types.h
+-
+
+/home/dada/workspace/sylar/http/http11_parser.h
+http11_common.h
+/home/dada/workspace/sylar/http/http11_common.h
+
+/home/dada/workspace/sylar/http/httpclient_parser.h
+http11_common.h
+/home/dada/workspace/sylar/http/http11_common.h
+
+/home/dada/workspace/sylar/tests/test_http.cc
+../http/http.h
+/home/dada/workspace/sylar/http/http.h
+iostream
+-
+sstream
+-
+

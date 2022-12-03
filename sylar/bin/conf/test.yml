@@ -1,0 +1,29 @@
+logs:
+        - name: root
+          level: info
+          formatter: "%d%T%m%n"
+          appender:
+                  - type: FileLogAppender
+                    file: log.txt
+                  - type: StdoutLogAppender
+sylar:
+        port: 220
+        value: 20
+system:
+        int_vec: [10,20,30]
+        int_list: [40,50,90]
+        int_set: [29,30,69,29]
+        int_unordered_set: [19,19,29]
+        int_unordered_map: 
+                k1: 20
+                k2: 30
+                k3: 40
+        int_map:
+                k7: 20
+                k8: 30
+                k9: 40
+        person:
+                name: kkk
+                age: 2
+int_vec: [10,20,30]
+
