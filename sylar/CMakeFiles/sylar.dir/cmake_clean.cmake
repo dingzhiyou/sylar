@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sylar.dir/http/httpclient_parser.rl.cc.o"
   "CMakeFiles/sylar.dir/http/servlet.cc.o"
   "CMakeFiles/sylar.dir/sylar/bytearray.cc.o"
+  "CMakeFiles/sylar.dir/sylar/daemon.cc.o"
   "CMakeFiles/sylar.dir/sylar/fd_manager.cc.o"
   "CMakeFiles/sylar.dir/sylar/fiber.cc.o"
   "CMakeFiles/sylar.dir/sylar/hook.cc.o"

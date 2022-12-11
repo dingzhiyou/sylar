@@ -109,6 +109,15 @@ CMakeFiles/sylar.dir/sylar/bytearray.cc.o
  /home/dada/workspace/sylar/sylar/log.h
  /home/dada/workspace/sylar/sylar/singleton.h
  /home/dada/workspace/sylar/sylar/util.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o
+ /home/dada/workspace/sylar/sylar/daemon.cc
+ /home/dada/workspace/sylar/sylar/daemon.h
+ /home/dada/workspace/sylar/sylar/fiber.h
+ /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
+ /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/thread.h
+ /home/dada/workspace/sylar/sylar/util.h
 CMakeFiles/sylar.dir/sylar/fd_manager.cc.o
  /home/dada/workspace/sylar/sylar/fd_manager.cc
  /home/dada/workspace/sylar/sylar/fd_manager.h
@@ -266,7 +275,10 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o
  /home/dada/workspace/sylar/sylar/thread.h
  /home/dada/workspace/sylar/sylar/util.h
 CMakeFiles/sylar.dir/sylar/timer.cc.o
+ /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/macro.h
  /home/dada/workspace/sylar/sylar/noncopyable.h
+ /home/dada/workspace/sylar/sylar/singleton.h
  /home/dada/workspace/sylar/sylar/thread.h
  /home/dada/workspace/sylar/sylar/timer.cc
  /home/dada/workspace/sylar/sylar/timer.h

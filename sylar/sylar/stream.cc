@@ -29,8 +29,8 @@ int Stream::readFix(ByteArray::ptr ba,size_t length){
 		left -= len;
 	}
 	return length;
-
 }
+
 int Stream::writeFix(const void* buffer,size_t length){
 	size_t left = length;
 	size_t offset = 0;
@@ -43,7 +43,6 @@ int Stream::writeFix(const void* buffer,size_t length){
 		offset += len;
 	}
 	return length;
-
 }
 int Stream::writeFix(ByteArray::ptr ba,size_t length){
 	size_t left = length;

@@ -59,8 +59,9 @@ HttpRequest::HttpRequest(uint8_t version,bool close)
 			,m_version(version)
 			,m_close(close)
 			,m_path("/"){
-
 }
+
+
 bool CaseInsensitiveLess::operator()(const std::string& lhs,const std::string& rhs)const{
 	return strcasecmp(lhs.c_str(),rhs.c_str()) < 0;
 }
@@ -69,6 +70,8 @@ std::string HttpRequest::getHead(const std::string& key,const std::string& def )
 	auto it = m_headers.find(key);
 	return it == m_headers.end() ? def : it->second;
 }
+
+
 std::string HttpRequest::getParam(const std::string& key,const std::string& def){
 	auto it = m_params.find(key);
 	return it == m_params.end() ? def : it->second;

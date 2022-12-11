@@ -132,6 +132,8 @@ public:
 		ss << event->getLogger()->getName();
 	}
 };
+
+
 class ThreadIdFormatItem: public LogFormatter::FormatItem{
 public:
 	ThreadIdFormatItem(const std::string& str=""){}
@@ -150,6 +152,8 @@ public:
 		ss << event->getFriberId();
 	}
 };
+
+
 class DateTimeFormatItem: public LogFormatter::FormatItem{
 public:
 
@@ -209,9 +213,6 @@ public:
 
 const char* LogLevel::toString(LogLevel::Level level)
 {
-
-
-
 	switch (level) {
 #define XX(name) \
 	case LogLevel::Level::name:  \
@@ -271,7 +272,6 @@ std::string  LogFormatter::format(std::shared_ptr<Logger> ptr,LogLevel::Level le
 		i->format(ptr,ss,level,event);
 	}
 	return ss.str();
-
 }
 
 void LogFormatter::init()
@@ -329,7 +329,6 @@ void LogFormatter::init()
 					break;
 				}
 			}
-
 			++n;
 		}
 
@@ -468,7 +467,6 @@ void Logger::log(LogLevel::Level level, LogEvent::ptr event)
 		if(!m_appenders.empty()){
 			for(auto& i : m_appenders)
 			{
-
 				i->log(it,level,event);
 			}
 		}else if(m_root){

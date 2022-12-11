@@ -56,8 +56,8 @@ void test_tiemr(){
 }
 
 int main(int argc,char** argv){
-	test1();
-//	test_tiemr();
+//	test1();
+	test_tiemr();
 	return 0;
 }
 

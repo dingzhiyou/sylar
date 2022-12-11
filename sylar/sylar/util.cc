@@ -2,6 +2,7 @@
 #include "fiber.h"
 #include"log.h"
 #include <bits/types/struct_timeval.h>
+#include <ctime>
 #include<execinfo.h>
 #include <sstream>
 #include <sys/select.h>
@@ -30,6 +31,8 @@ void Backtrace(std::vector<std::string> &bt, int size, int skip){
 	free(strings);
 }
 
+
+
 std::string BacktraceToString(int size, int skip){
 	std::vector<std::string> vec;
 	Backtrace(vec, size, skip);
@@ -40,6 +43,17 @@ std::string BacktraceToString(int size, int skip){
 	return ss.str();
 
 }
+
+
+
+std::string Time2Str(time_t ts,const std::string& format ){
+	struct tm tm;
+	localtime_r(&ts,&tm);
+	char buf[64] = {0};
+	std::strftime(buf,sizeof(buf),format.c_str(),&tm);
+	return buf;
+}
+
 
 uint64_t GetCurrentUs(){
 	struct timeval tv;
@@ -53,5 +67,7 @@ uint64_t GetCurrentMs(){
 	return tv.tv_sec * 1000 + tv.tv_usec / 1000;	
 
 }
+
+
 }
 

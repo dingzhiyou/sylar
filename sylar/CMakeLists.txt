@@ -10,6 +10,7 @@ set(LIB_SRC
 	http/http_session.cc
 	http/http_connection.cc
 	http/http_server.cc
+	sylar/daemon.cc
 	sylar/uri.rl.cc
 	http/servlet.cc
 	sylar/stream.cc
@@ -43,6 +44,9 @@ set(LIB_LIB
 	)
 
 
+add_executable(test_daemo  tests/test_daemo.cc)
+add_dependencies(test_daemo sylar)
+target_link_libraries(test_daemo ${LIB_LIB})
 
 add_executable(test_uri  tests/test_uri.cc)
 add_dependencies(test_uri sylar)
@@ -110,9 +114,9 @@ add_executable(test tests/test.cc)
 add_dependencies(test sylar )
 target_link_libraries(test ${LIB_LIB})
 
-add_executable(testconfig tests/configtest.cc)
-add_dependencies(testconfig sylar)
-target_link_libraries(testconfig ${LIB_LIB})
+add_executable(test_config tests/test_config.cc)
+add_dependencies(test_config sylar)
+target_link_libraries(test_config ${LIB_LIB})
 
 add_executable(test_fiber tests/test_fiber.cc)
 add_dependencies(test_fiber sylar)

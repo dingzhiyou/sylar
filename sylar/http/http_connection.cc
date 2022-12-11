@@ -177,7 +177,6 @@ HttpResponse::ptr HttpConnection::rcvResponse(){
 				int rt = read(data + len,buf_size - len);
 				if(rt <= 0){
 					close();
-					SYLAR_LOG_DEBUG(g_logger)<<"0000000000000000";
 					return nullptr;
 				}
 				len += rt;
@@ -185,13 +184,11 @@ HttpResponse::ptr HttpConnection::rcvResponse(){
 				size_t nparse = parse->execute(data,len,true);
 				if(parse->hasError()){
 					close();
-					SYLAR_LOG_DEBUG(g_logger)<<"0000000000000000";
 					return nullptr;
 				}
 				len -= nparse;
 				if(len == int(buf_size)){
 					close();
-					SYLAR_LOG_DEBUG(g_logger)<<"0000000000000000";
 					return nullptr;
 				}
 			}while(!parse->isFinished());
@@ -207,7 +204,6 @@ HttpResponse::ptr HttpConnection::rcvResponse(){
 					int rt = read(data,buf_size > left ? left : buf_size);
 					if(rt <=0){
 						close();
-					SYLAR_LOG_DEBUG(g_logger)<<"0000000000000000";
 						return nullptr;	
 					}
 					body.append(data,rt);
@@ -239,14 +235,12 @@ HttpResponse::ptr HttpConnection::rcvResponse(){
 				if((rt = readFix(&body[len],length)) <= 0){
 					SYLAR_ASSERT(rt == length);
 					close();
-					SYLAR_LOG_DEBUG(g_logger)<<"0000000000000000";
 					return nullptr;
 				}	
 			}
 			parse->getData()->setBody(body);
 		}
 	}
-	SYLAR_LOG_DEBUG(g_logger) <<"parse.use_count: "<< parse.use_count();
 	return  parse->getData();
 }
 int HttpConnection::sendRequest(HttpRequest::ptr rsq){

@@ -37,7 +37,7 @@ public:
 };
 using StackAllocator = MallocStackAllocator;	
 Fiber::Fiber(){
-	m_id = s_fiber_id;
+	m_id = s_fiber_id++;
 	m_state = EXEC;
 	SetThis(this);
 	if(getcontext(&m_ctx)){
@@ -190,19 +190,19 @@ uint64_t Fiber::TotalFibers(){
 void Fiber::MainFunc(){
 	Fiber::ptr cur = GetThis();
 	SYLAR_ASSERT2(cur,"error");
-	//try{
+	try{
 		cur->m_cb();
 		cur->m_cb = nullptr;
 		cur->m_state = TERM;
-	//}catch(std::exception& ex){
-	//	cur->m_state = EXCEPT;
-	//	SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "Fiber Exception "<<ex.what()
-	//					  <<std::endl
-	//					  <<BacktraceToString(100, 2);
-	//}catch(...){
-	//	cur->m_state = EXCEPT;
-	//	SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "Fiber Exception ";
-	//}
+	}catch(std::exception& ex){
+		cur->m_state = EXCEPT;
+		SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "Fiber Exception "<<ex.what()
+						  <<std::endl
+						  <<BacktraceToString(100, 2);
+	}catch(...){
+		cur->m_state = EXCEPT;
+		SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "Fiber Exception ";
+	}
 
 	auto raw_ptr = cur.get();
 	raw_ptr->setState(TERM);

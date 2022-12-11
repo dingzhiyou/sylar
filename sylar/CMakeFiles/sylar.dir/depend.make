@@ -109,6 +109,15 @@ CMakeFiles/sylar.dir/sylar/bytearray.cc.o: sylar/log.h
 CMakeFiles/sylar.dir/sylar/bytearray.cc.o: sylar/singleton.h
 CMakeFiles/sylar.dir/sylar/bytearray.cc.o: sylar/util.h
 
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/daemon.cc
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/daemon.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/fiber.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/log.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/noncopyable.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/thread.h
+CMakeFiles/sylar.dir/sylar/daemon.cc.o: sylar/util.h
+
 CMakeFiles/sylar.dir/sylar/fd_manager.cc.o: sylar/fd_manager.cc
 CMakeFiles/sylar.dir/sylar/fd_manager.cc.o: sylar/fd_manager.h
 CMakeFiles/sylar.dir/sylar/fd_manager.cc.o: sylar/fiber.h
@@ -265,7 +274,10 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: sylar/thread.cc
 CMakeFiles/sylar.dir/sylar/thread.cc.o: sylar/thread.h
 CMakeFiles/sylar.dir/sylar/thread.cc.o: sylar/util.h
 
+CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/log.h
+CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/macro.h
 CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/noncopyable.h
+CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/singleton.h
 CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/thread.h
 CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/timer.cc
 CMakeFiles/sylar.dir/sylar/timer.cc.o: sylar/timer.h

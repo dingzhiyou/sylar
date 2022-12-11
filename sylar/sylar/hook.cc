@@ -66,7 +66,6 @@ struct HookIniter{
 	HookIniter(){
 		hook_init();
 	}
-
 };
 
 static HookIniter s_Hook_init_;
@@ -108,7 +107,7 @@ retry:
 		sylar::Timer::ptr timer;
 		std::weak_ptr<timer_info> winfo(tinfo);
 
-		if((to != (uint64_t)-1)){
+		if((to != (uint64_t)0)){
 			timer = iom->addCondtionTimer(to,[winfo,fd,iom,event](){
 					auto it = winfo.lock();
 					if(!it || it->cancelled){
@@ -118,7 +117,6 @@ retry:
 					iom->cancelEvent(fd, (sylar::IOManager::Event)event);
 					} , winfo);
 		}
-
 		int rt = iom->addEvent(fd, (sylar::IOManager::Event)event);
 		if(rt){
 			SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "error addevent";
@@ -129,6 +127,7 @@ retry:
 		}else{
 			sylar::Fiber::YieldToHold();
 			if(timer){
+				SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "cancle timer";
 				timer->cancle();
 			}
 			if(tinfo->cancelled){

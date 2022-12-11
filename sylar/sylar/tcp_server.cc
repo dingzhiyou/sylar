@@ -14,7 +14,7 @@ static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 TcpServer::TcpServer(IOManager* worker,IOManager* acceptWorker)
 		    :m_worker(worker)
 		    ,m_acceptworker(acceptWorker)
-		    ,m_RecvTimeout(1000* 2 * 6)
+		    ,m_RecvTimeout(1000 * 2 * 6)
 		    ,m_name("sylar/1.0.0")
 		    ,m_isStop(true){
 	
@@ -86,7 +86,6 @@ void TcpServer::startAccept(Socket::ptr sock){
 	while(!m_isStop){
 		Socket::ptr client = sock->accept();
 		if(client){
-			SYLAR_LOG_ERROR(g_logger) << "------------------client:"<<client->toString();
 			client->setRecvTimerout(m_RecvTimeout);
 			m_worker->scheduler(std::bind(&TcpServer::handleClient,shared_from_this(),client));
 		}else{

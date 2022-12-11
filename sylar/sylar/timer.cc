@@ -1,6 +1,8 @@
+#include"macro.h"
 #include "timer.h"
 #include "thread.h"
 #include "util.h"
+#include"log.h"
 #include <functional>
 
 namespace sylar{
@@ -53,7 +55,11 @@ bool Timer::cancle(){
 	if(m_cb){
 		m_cb = nullptr;
 		auto it = m_manager->m_timers.find(shared_from_this());
-		m_manager->m_timers.erase(it);
+		//SYLAR_ASSERT(it != m_manager->m_timers.end());
+		SYLAR_LOG_FATAL(SYLAR_LOG_ROOT()) << "m_timers.size(): "<<m_manager->m_timers.size();
+		if(it != m_manager->m_timers.end()){
+			m_manager->m_timers.erase(it);
+		}
 		return true;
 	}
 
@@ -75,10 +81,9 @@ bool Timer::reset(uint64_t ms,bool from_now){
 	auto self = shared_from_this();
 	m_manager->addTimer(self);
 	return true;
-
-
-
 }
+
+
 bool Timer::refresh(){
 	TimerManager::MutexType::WriteLock lock(m_manager->m_mutex);
 	if(!m_cb){
@@ -107,7 +112,13 @@ void TimerManager::listExpiredCb(std::vector<std::function<void()> >& cbs ){
 		break;
 	}
 
-
+	
+	//auto it = m_timers.begin();
+	//while(it != m_timers.end() && (*it)->m_next <= now_ms){
+	//	it++;
+	//}
+	//expired.insert(expired.begin(),m_timers.begin(),it);
+	//m_timers.erase(m_timers.begin(),it);
 
 	for(auto& timer : expired){
 		if(timer->m_recurring){

@@ -3,8 +3,8 @@
 
 
 void run(){
-	sylar::http::HttpServer::ptr http_server(new sylar::http::HttpServer);
-	sylar::Address::ptr addr = sylar::Address::LookupAny("127.0.0.1:8020");
+	sylar::http::HttpServer::ptr http_server(new sylar::http::HttpServer(true));
+	sylar::Address::ptr addr = sylar::Address::LookupAny("192.168.94.132:8020");
 	
 	SYLAR_LOG_DEBUG(SYLAR_LOG_ROOT()) <<"m_family："<<addr->getFamily();
 

@@ -54,9 +54,6 @@ public:
 	static IPAddress::ptr Create(const char* address, uint16_t port = 0);
 	virtual uint32_t getPort()const  = 0;
 	virtual void setPort(uint16_t v) = 0;
-
-
-
 private:
 
 };

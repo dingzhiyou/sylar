@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function  -rdynamic CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o  -o bin/test_daemo   -L/home/dada/workspace/yaml-cpp/build  -Wl,-rpath,/home/dada/workspace/yaml-cpp/build:/bin /bin/libsylar.so -lpthread -lyaml-cpp -ldl 

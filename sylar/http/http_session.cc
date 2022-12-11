@@ -4,6 +4,7 @@
 #include "../sylar/log.h"
 #include <cstring>
 #include <string>
+#include <strings.h>
 
 namespace sylar{
 namespace http{
@@ -69,6 +70,10 @@ HttpRequest::ptr HttpSession::rcvRequest(){
 			}	
 		}
 		parse->getData()->setBody(body);
+	}
+	std::string keep_alive = parse->getData()->getHead("connection");
+	if(strcasecmp(keep_alive.c_str(),"keep-alive") == 0){
+		parse->getData()->setClose(false);
 	}
 	return  parse->getData();
 }

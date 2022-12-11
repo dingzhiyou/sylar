@@ -12,10 +12,8 @@
 
 
 namespace sylar{
-
 bool is_hook_enable();
 void set_hook_enable(bool flag);
-
 }
 
 extern "C"{

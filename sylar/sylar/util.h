@@ -17,6 +17,9 @@ namespace sylar{
 	std::string BacktraceToString(int size,int skip);
 	uint64_t GetCurrentUs();
 	uint64_t GetCurrentMs();
+
+
+	std::string Time2Str(time_t ts,const std::string& format = "%Y-%m-%d %H:%M:%S");
 }
 
 

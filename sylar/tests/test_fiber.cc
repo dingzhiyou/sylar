@@ -23,8 +23,6 @@ void test_fiber(){
 	fiber->swapIn();
 
 	SYLAR_LOG_INFO(g_logger) << "main end";
-
-
 }
 
 int main(){

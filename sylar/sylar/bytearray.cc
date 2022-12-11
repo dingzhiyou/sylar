@@ -67,10 +67,8 @@ void ByteArray::writeFuint8(uint8_t value){
 }
 void ByteArray::writeFint16(int16_t value){
 	if(SYLAR_BYTE_ORDER == m_endian){
-		SYLAR_LOG_DEBUG(SYLAR_LOG_ROOT()) <<"m_endian---------------------";
 		write(&value, sizeof(value));
 	}else{
-		SYLAR_LOG_DEBUG(SYLAR_LOG_ROOT()) <<"m_endian---------------------";
 		value = byteswap(value);
 		write(&value, sizeof(value));
 	}
@@ -537,7 +535,6 @@ void ByteArray::readFromFile(std::string& name){
 		SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << " ifs error";
 		return;
 	}
-
 	std::shared_ptr<char> buff(new char[m_baseSize],[](char* ptr){delete[] ptr;});
 	while(!ifs.eof()){
 		ifs.read(buff.get(), m_baseSize);
@@ -605,7 +602,7 @@ uint64_t ByteArray::getReadBuffers(std::vector<iovec>& buffers,uint64_t len){
 	return size;
 }
 uint64_t ByteArray::getReadBuffers(std::vector<iovec>& buffers,uint64_t len,uint64_t position){
-	len  = getReadSize() > len ? len : getReadSize();
+	len  = (m_size - position) > len ? len : (m_size - position);
 	if(len == 0){
 		return 0;
 	}

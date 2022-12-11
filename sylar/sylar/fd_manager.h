@@ -43,10 +43,7 @@ private:
 	uint64_t m_recvTimeout;
 	uint64_t m_sendTimeout;
 	
-
 	sylar::IOManager* m_iomanager;
-
-
 };
 
 class FdManager{

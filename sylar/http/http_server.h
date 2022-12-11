@@ -9,7 +9,7 @@ namespace http{
 class HttpServer :public TcpServer{
 public:
 	typedef std::shared_ptr<HttpServer> ptr;
-	HttpServer(IOManager* worker = sylar::IOManager::GetThis(),IOManager* acceptWorker = sylar::IOManager::GetThis(),bool keepalive = false);
+	HttpServer(bool keepalive = false,IOManager* worker = sylar::IOManager::GetThis(),IOManager* acceptWorker = sylar::IOManager::GetThis());
 	virtual void handleClient(Socket::ptr sock) override;
 	void setDispatch(ServletDispatch::ptr disptch){m_dispatch = disptch;}
 	ServletDispatch::ptr getDispatch()const {return m_dispatch;}

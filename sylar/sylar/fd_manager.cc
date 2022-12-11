@@ -16,8 +16,8 @@ FdCtx::FdCtx(int fd)
 	     ,m_sysNonblock(false)
 	     ,m_UserNonblock(false)
 	     ,m_fd(fd)
-	     ,m_recvTimeout(-1)
-	     ,m_sendTimeout(-1){
+	     ,m_recvTimeout(0)
+	     ,m_sendTimeout(0){
 	init();
 }
 
@@ -25,9 +25,6 @@ bool FdCtx::init(){
 	if(m_isInit){
 		return true;
 	}	
-	m_recvTimeout = -1;
-	m_sendTimeout = -1;
-
 	struct stat fd_stat;
 
 	if(-1 == fstat(m_fd,&fd_stat)){
@@ -60,7 +57,7 @@ FdCtx::~FdCtx(){
 
 
 FdCtx::ptr FdManager::get(int fd,bool auto_create){
-	if(fd == -1){
+	if(fd <	0){
 		return nullptr;
 	}
 	MutexType::ReadLock lock(m_mutex);
@@ -91,6 +88,7 @@ void FdManager::del(int fd){
 
 bool FdCtx::close(){
 	::close(m_fd);
+	m_isClosed = true;
 	return true;
 }
 void FdCtx::setTimeout(int type ,uint64_t v){
@@ -102,7 +100,7 @@ void FdCtx::setTimeout(int type ,uint64_t v){
 
 }
 uint64_t FdCtx::getTimeout(int type){
-	if(type == 2){
+	if(type == SO_RCVTIMEO){
 		return m_recvTimeout;
 	}else{
 		return m_sendTimeout;

@@ -1,9 +1,11 @@
 /home/dada/workspace/sylar/CMakeFiles/test_fiber.dir
+/home/dada/workspace/sylar/CMakeFiles/test_config.dir
 /home/dada/workspace/sylar/CMakeFiles/test.dir
 /home/dada/workspace/sylar/CMakeFiles/test_scheduler.dir
-/home/dada/workspace/sylar/CMakeFiles/sylar.dir
 /home/dada/workspace/sylar/CMakeFiles/testassert.dir
 /home/dada/workspace/sylar/CMakeFiles/test_hook.dir
+/home/dada/workspace/sylar/CMakeFiles/sylar.dir
+/home/dada/workspace/sylar/CMakeFiles/test_iomanager.dir
 /home/dada/workspace/sylar/CMakeFiles/rebuild_cache.dir
 /home/dada/workspace/sylar/CMakeFiles/edit_cache.dir
 /home/dada/workspace/sylar/CMakeFiles/test_uri.dir
@@ -12,11 +14,10 @@
 /home/dada/workspace/sylar/CMakeFiles/test_http_server.dir
 /home/dada/workspace/sylar/CMakeFiles/test_thread.dir
 /home/dada/workspace/sylar/CMakeFiles/echoServer.dir
-/home/dada/workspace/sylar/CMakeFiles/testconfig.dir
+/home/dada/workspace/sylar/CMakeFiles/test_http_parser.dir
+/home/dada/workspace/sylar/CMakeFiles/test_tcp_server.dir
 /home/dada/workspace/sylar/CMakeFiles/test_bytearray.dir
 /home/dada/workspace/sylar/CMakeFiles/test_addr.dir
 /home/dada/workspace/sylar/CMakeFiles/test_sock.dir
-/home/dada/workspace/sylar/CMakeFiles/test_tcp_server.dir
-/home/dada/workspace/sylar/CMakeFiles/test_http_parser.dir
-/home/dada/workspace/sylar/CMakeFiles/test_iomanager.dir
+/home/dada/workspace/sylar/CMakeFiles/test_daemo.dir
 /home/dada/workspace/sylar/CMakeFiles/test_http.dir

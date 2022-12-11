@@ -108,8 +108,6 @@ public:
 private:
 	std::vector<FormatItem::ptr> m_items;
 	std::string m_pattern;
-	
-
 };
 
 

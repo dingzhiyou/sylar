@@ -140,7 +140,7 @@ enum HttpStatus{
 HttpMethod StringToHttpMethod(const std::string& m);
 HttpMethod CharsToHttpMethod(const char* m);
 const char* HttpMethodToString(const HttpMethod& m);
-const char* HttpStatusToString(const HttpMethod& s);
+const char* HttpStatusToString(const HttpStatus& s);
 
 
 template<class MapType,class T>

@@ -58,12 +58,7 @@ public:
 		for(size_t i = 0;i < node.size(); i++){
 			ss.str("");
 			ss << node[i];
-			SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "ss.str() : "<<ss.str(); 
 			vec.push_back(LexicalCast<std::string,T>()(ss.str()));
-		}
-
-		for(auto i : vec){
-			SYLAR_LOG_DEBUG(SYLAR_LOG_ROOT()) <<"vec: " <<i;
 		}
 		return vec;
 	}
@@ -99,12 +94,10 @@ public:
 		for(size_t i = 0;i < node.size(); i++){
 			ss.str("");
 			ss << node[i];
-			SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "ss.str() : "<<ss.str(); 
 			vec.push_back(LexicalCast<std::string,T>()(ss.str()));
 		}
 		return vec;
 	}
-
 };
 
 
@@ -137,7 +130,6 @@ public:
 		for(size_t i = 0;i < node.size(); i++){
 			ss.str("");
 			ss << node[i];
-			SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "ss.str() : "<<ss.str(); 
 			vec.insert(LexicalCast<std::string,T>()(ss.str()));
 		}
 		return vec;
@@ -210,9 +202,6 @@ public:
 		for(auto it = node.begin();it != node.end(); it++){
 			ss.str("");
 			ss << it->second;
-			std::cout<<"it->first"<<it->first << "       -       "<<it->second;
-
-
 			vec.insert(std::make_pair(it->first.Scalar(),LexicalCast<std::string,T>()(ss.str())));
 		}
 		return vec;
@@ -337,7 +326,6 @@ public:
 		if( it != m_datas.end()){
 			auto tmp = std::dynamic_pointer_cast<ConfigVar<T> >(it->second);
 			if(tmp){
-				SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "tmp.use_count"<< tmp.use_count();
 				return tmp;
 			}else{
 				SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "m_datas name: " << name << "  already exist";
@@ -345,9 +333,7 @@ public:
 		}
 
 		typename ConfigVar<T>::ptr v(new ConfigVar<T>(name,default_val,description));
-		SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "v.use_count"<< v.use_count();
 		m_datas[name] = v;
-		SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "v.use_count"<< v.use_count();
 		return v;
 	}
 

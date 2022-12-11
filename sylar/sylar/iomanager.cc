@@ -109,7 +109,6 @@ int IOManager::addEvent(int fd,Event event,std::function<void()> cb){
 	//Fix Me
 	event_ctx.scheduler = Scheduler::GetThis();
 	if(cb){
-		SYLAR_LOG_INFO(g_logger) << "add cb successful";
 		event_ctx.cb.swap(cb);
 	}else{
 		event_ctx.fiber = Fiber::GetThis();
@@ -151,9 +150,9 @@ bool IOManager::delEvent(int fd,Event event){
 	FdContext::EventContext& event_ctx = fd_ctx->getContext(event);
 	fd_ctx->resetContext(event_ctx);
 	return true;
-	
-
 }
+
+
 IOManager::FdContext::EventContext&  IOManager::FdContext::getContext(IOManager::Event event){
 	switch (event) {
 		case IOManager::READ :
@@ -197,7 +196,7 @@ bool IOManager::cancelEvent(int fd,Event event){
 		return false;
 	}
 
-	fd_ctx->triggerEvent(event);
+	fd_ctx->triggerEvent(event);//强制触发，并cancle掉fd_ctx里面的事件
 	--m_pendingEventCount;
 	return true;
 	

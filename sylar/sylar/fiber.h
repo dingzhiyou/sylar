@@ -37,7 +37,7 @@ public:
 	State getState()const {return m_state;}
 public:
 	static void SetThis(Fiber* f);
-	static Fiber* GetThis(Fiber* f);
+	Fiber* GetThis(Fiber* f);
 	static Fiber::ptr GetThis();
 	static void YieldToReady();
 	static void YieldToHold();

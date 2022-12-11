@@ -211,6 +211,7 @@ void Scheduler::stop(){
 			//	t_scheduler_fiber = m_rootFiber.get();
 			//}
 
+			SYLAR_LOG_INFO(g_logger) << "-------";
 			m_rootFiber->call();
 		}
 	}

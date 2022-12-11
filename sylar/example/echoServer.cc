@@ -52,7 +52,7 @@ void EchoServer::handleClient(sylar::Socket::ptr sock){
 
 void run(){
 	EchoServer::ptr echo(new EchoServer(1));
-	sylar::Address::ptr addr = sylar::Address::LookupAnyIPAddress("0.0.0.0:8022");
+	sylar::Address::ptr addr = sylar::Address::LookupAnyIPAddress("0.0.0.0:8033");
 
 	while(!echo->bind(addr)){
 		sleep(2);

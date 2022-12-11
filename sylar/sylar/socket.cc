@@ -74,6 +74,9 @@ void Socket::setSendTimerout(uint64_t v){
 	struct timeval tv;
 	tv.tv_sec = (long)(v/1000);
 	tv.tv_usec = (long)(v % 1000 * 1000);
+	auto fdx = sylar::FdMgr::GetInstance()->get(m_sock);
+	fdx->setTimeout(SO_SNDTIMEO, v);
+
 	setOption(SOL_SOCKET,SO_SNDTIMEO,tv);
 }
 
@@ -90,6 +93,9 @@ void Socket::setRecvTimerout(uint64_t v){
 	tv.tv_sec = (long)(v/1000);
 	tv.tv_usec = (long)(v % 1000 * 1000);
 	setOption(SOL_SOCKET,SO_SNDTIMEO,tv);
+
+	auto fdx = sylar::FdMgr::GetInstance()->get(m_sock);
+	fdx->setTimeout(SO_RCVTIMEO, v);
 }
 
 
@@ -243,7 +249,7 @@ bool Socket::bind(const Address::ptr addr){
 	}
 
 	if(::bind(m_sock,addr->getAddr(),addr->getAddrLen())){
-		SYLAR_LOG_ERROR(g_logger) <<"bind err "<<"errno-"<<errno<<"-strerror-"<<strerror(errno) ;
+		SYLAR_LOG_ERROR(g_logger) <<"bind err "<<"errno-"<<errno<<"-strerror-"<<strerror(errno) << "----"<< addr->toString() ;
 		return false;
 	}
 	getLocalAddress();
@@ -295,7 +301,6 @@ bool Socket::close(){
 
 	m_isConnected = false;
 	if(m_sock != -1){
-		SYLAR_LOG_ERROR(g_logger) << "closed socket: "<<m_sock;
 	 	::close(m_sock);
 		m_sock = -1;
 	}

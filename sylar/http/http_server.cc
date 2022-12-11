@@ -10,14 +10,15 @@ namespace http{
 static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 
 
-HttpServer::HttpServer(IOManager* worker,IOManager* acceptWorker,bool keepalive):TcpServer(worker,acceptWorker),m_isKeepalive(keepalive){
+HttpServer::HttpServer(bool keepalive ,IOManager* worker,IOManager* acceptWorker):TcpServer(worker,acceptWorker),m_isKeepalive(keepalive){
 	m_dispatch.reset(new ServletDispatch());       
 	 }
 
 void HttpServer::handleClient(Socket::ptr sock){
  	HttpSession::ptr session(new HttpSession(sock));
+	HttpRequest::ptr req = nullptr;
 	do{
-		auto req = session->rcvRequest();
+		req = session->rcvRequest();
 		if(!req){
 			SYLAR_LOG_WARN(g_logger) << "session->rcvRequest err"<<" errno:" <<errno <<"errstr" <<" "<<strerror(errno);
 			return;
@@ -27,7 +28,7 @@ void HttpServer::handleClient(Socket::ptr sock){
 		//不一定命中
 		m_dispatch->handle(req,rsp,session);
 		session->sendResponse(rsp);
-	}while(m_isKeepalive);
+	}while(m_isKeepalive && !req->isClose());
 	session->close();
 }
 
