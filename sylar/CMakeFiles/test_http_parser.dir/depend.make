@@ -7,6 +7,7 @@ CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: http/http11_parser.
 CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: http/http_parser.h
 CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: http/httpclient_parser.h
 CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: sylar/config.h
+CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: sylar/env.h
 CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: sylar/fiber.h
 CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: sylar/hook.h
 CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: sylar/iomanager.h

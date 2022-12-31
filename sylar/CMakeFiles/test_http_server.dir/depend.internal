@@ -8,9 +8,11 @@ CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o
  /home/dada/workspace/sylar/http/http_server.h
  /home/dada/workspace/sylar/http/http_session.h
  /home/dada/workspace/sylar/http/httpclient_parser.h
+ /home/dada/workspace/sylar/http/resourceServlet.h
  /home/dada/workspace/sylar/http/servlet.h
  /home/dada/workspace/sylar/sylar/bytearray.h
  /home/dada/workspace/sylar/sylar/config.h
+ /home/dada/workspace/sylar/sylar/env.h
  /home/dada/workspace/sylar/sylar/fiber.h
  /home/dada/workspace/sylar/sylar/hook.h
  /home/dada/workspace/sylar/sylar/iomanager.h

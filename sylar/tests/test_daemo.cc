@@ -11,7 +11,6 @@ int test_daemo(int argc,char** argv){
 		static int count =0 ;
 		if(++count > 10){
 			timer->cancle();
-			exit(0);
 		}
 	},true);
 

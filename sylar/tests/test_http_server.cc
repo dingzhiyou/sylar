@@ -1,6 +1,7 @@
 #include "../http/http_server.h"
 #include "../sylar/sylar.h"
-
+#include "../http/resourceServlet.h"
+#include "../sylar/env.h"
 
 void run(){
 	sylar::http::HttpServer::ptr http_server(new sylar::http::HttpServer(true));
@@ -19,13 +20,15 @@ void run(){
 		rsp->setBody(req->toString());
 		return 0;		
 	});
+	dispatch->addGlobServlet("/html/*",sylar::http::Servlet::ptr(new sylar::http::ResourceServlet(sylar::EnvMgr::GetInstance()->getCWD())));
 
 
 	http_server->start();
 
 }
 
-int main(){
+int main(int argc,char** argv){
+	sylar::EnvMgr::GetInstance()->init(argc,argv);
 	sylar::IOManager iom(2);
 	iom.scheduler(run);
 

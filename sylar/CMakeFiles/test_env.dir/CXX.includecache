@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dada/workspace/sylar/sylar/env.h
+singleton.h
+/home/dada/workspace/sylar/sylar/singleton.h
+thread.h
+/home/dada/workspace/sylar/sylar/thread.h
+map
+-
+vector
+-
+
+/home/dada/workspace/sylar/sylar/noncopyable.h
+
+/home/dada/workspace/sylar/sylar/singleton.h
+memory
+-
+
+/home/dada/workspace/sylar/sylar/thread.h
+memory
+-
+thread
+-
+functional
+-
+pthread.h
+-
+semaphore.h
+-
+stdint.h
+-
+noncopyable.h
+/home/dada/workspace/sylar/sylar/noncopyable.h
+
+/home/dada/workspace/sylar/tests/test_env.cc
+../sylar/env.h
+/home/dada/workspace/sylar/sylar/env.h
+

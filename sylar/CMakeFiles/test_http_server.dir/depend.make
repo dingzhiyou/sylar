@@ -7,9 +7,11 @@ CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: http/http11_parser.
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: http/http_server.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: http/http_session.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: http/httpclient_parser.h
+CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: http/resourceServlet.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: http/servlet.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: sylar/bytearray.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: sylar/config.h
+CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: sylar/env.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: sylar/fiber.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: sylar/hook.h
 CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: sylar/iomanager.h

@@ -3,8 +3,11 @@
 
 CMakeFiles/test_config.dir/tests/test_config.cc.o
  /home/dada/workspace/sylar/sylar/config.h
+ /home/dada/workspace/sylar/sylar/env.h
  /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
  /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/thread.h
  /home/dada/workspace/sylar/sylar/util.h
  /home/dada/workspace/sylar/tests/test_config.cc
  /home/dada/workspace/yaml-cpp/include/yaml-cpp/binary.h

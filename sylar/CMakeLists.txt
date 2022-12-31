@@ -5,14 +5,19 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function")
 
 set(LIB_SRC 
+	sylar/application.cc
 	sylar/util.cc
+	sylar/config.cc
+	http/resourceServlet.cc
 	sylar/log.cc
 	http/http_session.cc
 	http/http_connection.cc
 	http/http_server.cc
 	sylar/daemon.cc
 	sylar/uri.rl.cc
+	sylar/env.cc
 	http/servlet.cc
+	sylar/env.cc
 	sylar/stream.cc
 	sylar/sockstream.cc
 	http/http.cc
@@ -43,6 +48,14 @@ set(LIB_LIB
 	dl
 	)
 
+add_executable(test_application  tests/test_application.cc)
+add_dependencies(test_application sylar)
+target_link_libraries(test_application ${LIB_LIB})
+
+
+add_executable(test_env  tests/test_env.cc)
+add_dependencies(test_env sylar)
+target_link_libraries(test_env ${LIB_LIB})
 
 add_executable(test_daemo  tests/test_daemo.cc)
 add_dependencies(test_daemo sylar)
@@ -91,6 +104,11 @@ target_link_libraries(test_iomanager ${LIB_LIB})
 add_executable(test_addr tests/test_addr.cc)
 add_dependencies(test_addr sylar)
 target_link_libraries(test_addr ${LIB_LIB})
+
+
+add_executable(test_my tests/test_my.cc)
+add_dependencies(test_my sylar)
+target_link_libraries(test_my ${LIB_LIB})
 
 
 add_executable(test_sock tests/test_socket.cc)

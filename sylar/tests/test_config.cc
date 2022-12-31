@@ -1,6 +1,7 @@
 #include "../sylar/config.h"
 #include "../sylar/log.h"
 #include <sstream>
+#include "../sylar/env.h"
 #include <vector>
 #include <yaml-cpp/node/node.h>
 #include <yaml-cpp/node/parse.h>
@@ -101,15 +102,17 @@ public:
 
 }
 */
-sylar::ConfigVar<int>::ptr g_int_value = sylar::Config::Lookup("sylar.port",(int)8080,"sylar port");
+//sylar::ConfigVar<int>::ptr g_int_value = sylar::Config::Lookup("sylar.port",(int)8080,"sylar port");
+
+void test_confDir(){
+	sylar::Config::LoadFromConDir("conf");
+}
 int main(int argc,char** argv)
 {
-
-	SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "use count " << g_int_value.use_count();
-
-
-	SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << g_int_value->getValue();
-	SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "use count " << g_int_value.use_count();
+	sylar::EnvMgr::GetInstance()->init(argc,argv);
+	test_confDir();
+	//SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << g_int_value->getValue();
+	//SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "use count " << g_int_value.use_count();
 	//SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << g_float_value->toString();
 
 //	auto x = g_int_list_value->getValue();

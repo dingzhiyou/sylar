@@ -87,6 +87,25 @@ CMakeFiles/sylar.dir/http/httpclient_parser.rl.cc.o
  /home/dada/workspace/sylar/http/http11_common.h
  /home/dada/workspace/sylar/http/httpclient_parser.h
  /home/dada/workspace/sylar/http/httpclient_parser.rl.cc
+CMakeFiles/sylar.dir/http/resourceServlet.cc.o
+ /home/dada/workspace/sylar/http/http.h
+ /home/dada/workspace/sylar/http/http11_common.h
+ /home/dada/workspace/sylar/http/http11_parser.h
+ /home/dada/workspace/sylar/http/http_session.h
+ /home/dada/workspace/sylar/http/httpclient_parser.h
+ /home/dada/workspace/sylar/http/resourceServlet.cc
+ /home/dada/workspace/sylar/http/resourceServlet.h
+ /home/dada/workspace/sylar/http/servlet.h
+ /home/dada/workspace/sylar/sylar/bytearray.h
+ /home/dada/workspace/sylar/sylar/ipaddr.h
+ /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
+ /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/socket.h
+ /home/dada/workspace/sylar/sylar/sockstream.h
+ /home/dada/workspace/sylar/sylar/stream.h
+ /home/dada/workspace/sylar/sylar/thread.h
+ /home/dada/workspace/sylar/sylar/util.h
 CMakeFiles/sylar.dir/http/servlet.cc.o
  /home/dada/workspace/sylar/http/http.h
  /home/dada/workspace/sylar/http/http11_common.h
@@ -102,6 +121,65 @@ CMakeFiles/sylar.dir/http/servlet.cc.o
  /home/dada/workspace/sylar/sylar/sockstream.h
  /home/dada/workspace/sylar/sylar/stream.h
  /home/dada/workspace/sylar/sylar/thread.h
+CMakeFiles/sylar.dir/sylar/application.cc.o
+ /home/dada/workspace/sylar/http/http.h
+ /home/dada/workspace/sylar/http/http11_common.h
+ /home/dada/workspace/sylar/http/http11_parser.h
+ /home/dada/workspace/sylar/http/http_server.h
+ /home/dada/workspace/sylar/http/http_session.h
+ /home/dada/workspace/sylar/http/httpclient_parser.h
+ /home/dada/workspace/sylar/http/servlet.h
+ /home/dada/workspace/sylar/sylar/application.cc
+ /home/dada/workspace/sylar/sylar/application.h
+ /home/dada/workspace/sylar/sylar/bytearray.h
+ /home/dada/workspace/sylar/sylar/config.h
+ /home/dada/workspace/sylar/sylar/daemon.h
+ /home/dada/workspace/sylar/sylar/env.h
+ /home/dada/workspace/sylar/sylar/fiber.h
+ /home/dada/workspace/sylar/sylar/iomanager.h
+ /home/dada/workspace/sylar/sylar/ipaddr.h
+ /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
+ /home/dada/workspace/sylar/sylar/scheduler.h
+ /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/socket.h
+ /home/dada/workspace/sylar/sylar/sockstream.h
+ /home/dada/workspace/sylar/sylar/stream.h
+ /home/dada/workspace/sylar/sylar/tcp_server.h
+ /home/dada/workspace/sylar/sylar/thread.h
+ /home/dada/workspace/sylar/sylar/timer.h
+ /home/dada/workspace/sylar/sylar/util.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/binary.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/dll.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emitter.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emitterdef.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emittermanip.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emitterstyle.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/exceptions.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/mark.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/convert.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/impl.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/iterator.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/iterator_fwd.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/memory.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node_data.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node_iterator.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node_ref.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/emit.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/impl.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/iterator.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/node.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/parse.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/ptr.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/type.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/noexcept.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/null.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/ostream_wrapper.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/parser.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/stlemitter.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/traits.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/yaml.h
 CMakeFiles/sylar.dir/sylar/bytearray.cc.o
  /home/dada/workspace/sylar/sylar/bytearray.cc
  /home/dada/workspace/sylar/sylar/bytearray.h
@@ -109,10 +187,58 @@ CMakeFiles/sylar.dir/sylar/bytearray.cc.o
  /home/dada/workspace/sylar/sylar/log.h
  /home/dada/workspace/sylar/sylar/singleton.h
  /home/dada/workspace/sylar/sylar/util.h
+CMakeFiles/sylar.dir/sylar/config.cc.o
+ /home/dada/workspace/sylar/sylar/config.cc
+ /home/dada/workspace/sylar/sylar/config.h
+ /home/dada/workspace/sylar/sylar/env.h
+ /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
+ /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/thread.h
+ /home/dada/workspace/sylar/sylar/util.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/binary.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/dll.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emitter.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emitterdef.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emittermanip.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/emitterstyle.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/exceptions.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/mark.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/convert.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/impl.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/iterator.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/iterator_fwd.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/memory.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node_data.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node_iterator.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/detail/node_ref.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/emit.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/impl.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/iterator.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/node.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/parse.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/ptr.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/node/type.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/noexcept.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/null.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/ostream_wrapper.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/parser.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/stlemitter.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/traits.h
+ /home/dada/workspace/yaml-cpp/include/yaml-cpp/yaml.h
 CMakeFiles/sylar.dir/sylar/daemon.cc.o
  /home/dada/workspace/sylar/sylar/daemon.cc
  /home/dada/workspace/sylar/sylar/daemon.h
  /home/dada/workspace/sylar/sylar/fiber.h
+ /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
+ /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/thread.h
+ /home/dada/workspace/sylar/sylar/util.h
+CMakeFiles/sylar.dir/sylar/env.cc.o
+ /home/dada/workspace/sylar/sylar/env.cc
+ /home/dada/workspace/sylar/sylar/env.h
  /home/dada/workspace/sylar/sylar/log.h
  /home/dada/workspace/sylar/sylar/noncopyable.h
  /home/dada/workspace/sylar/sylar/singleton.h
@@ -173,9 +299,13 @@ CMakeFiles/sylar.dir/sylar/ipaddr.cc.o
  /home/dada/workspace/sylar/sylar/util.h
 CMakeFiles/sylar.dir/sylar/log.cc.o
  /home/dada/workspace/sylar/sylar/config.h
+ /home/dada/workspace/sylar/sylar/env.h
+ /home/dada/workspace/sylar/sylar/fiber.h
  /home/dada/workspace/sylar/sylar/log.cc
  /home/dada/workspace/sylar/sylar/log.h
+ /home/dada/workspace/sylar/sylar/noncopyable.h
  /home/dada/workspace/sylar/sylar/singleton.h
+ /home/dada/workspace/sylar/sylar/thread.h
  /home/dada/workspace/sylar/sylar/util.h
  /home/dada/workspace/yaml-cpp/include/yaml-cpp/binary.h
  /home/dada/workspace/yaml-cpp/include/yaml-cpp/dll.h

@@ -8,6 +8,7 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: http/http_c
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: http/httpclient_parser.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: sylar/bytearray.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: sylar/config.h
+CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: sylar/env.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: sylar/fiber.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: sylar/hook.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: sylar/iomanager.h

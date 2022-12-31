@@ -192,6 +192,58 @@ test_hook/fast:
 .PHONY : test_hook/fast
 
 #=============================================================================
+# Target rules for targets named test_sock
+
+# Build rule for target.
+test_sock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_sock
+.PHONY : test_sock
+
+# fast build rule for target.
+test_sock/fast:
+	$(MAKE) -f CMakeFiles/test_sock.dir/build.make CMakeFiles/test_sock.dir/build
+.PHONY : test_sock/fast
+
+#=============================================================================
+# Target rules for targets named test_my
+
+# Build rule for target.
+test_my: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_my
+.PHONY : test_my
+
+# fast build rule for target.
+test_my/fast:
+	$(MAKE) -f CMakeFiles/test_my.dir/build.make CMakeFiles/test_my.dir/build
+.PHONY : test_my/fast
+
+#=============================================================================
+# Target rules for targets named test_addr
+
+# Build rule for target.
+test_addr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_addr
+.PHONY : test_addr
+
+# fast build rule for target.
+test_addr/fast:
+	$(MAKE) -f CMakeFiles/test_addr.dir/build.make CMakeFiles/test_addr.dir/build
+.PHONY : test_addr/fast
+
+#=============================================================================
+# Target rules for targets named test_application
+
+# Build rule for target.
+test_application: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_application
+.PHONY : test_application
+
+# fast build rule for target.
+test_application/fast:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+.PHONY : test_application/fast
+
+#=============================================================================
 # Target rules for targets named sylar
 
 # Build rule for target.
@@ -203,6 +255,19 @@ sylar: cmake_check_build_system
 sylar/fast:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/build
 .PHONY : sylar/fast
+
+#=============================================================================
+# Target rules for targets named test_env
+
+# Build rule for target.
+test_env: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_env
+.PHONY : test_env
+
+# fast build rule for target.
+test_env/fast:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+.PHONY : test_env/fast
 
 #=============================================================================
 # Target rules for targets named test_iomanager
@@ -333,32 +398,6 @@ test_bytearray: cmake_check_build_system
 test_bytearray/fast:
 	$(MAKE) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
 .PHONY : test_bytearray/fast
-
-#=============================================================================
-# Target rules for targets named test_addr
-
-# Build rule for target.
-test_addr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_addr
-.PHONY : test_addr
-
-# fast build rule for target.
-test_addr/fast:
-	$(MAKE) -f CMakeFiles/test_addr.dir/build.make CMakeFiles/test_addr.dir/build
-.PHONY : test_addr/fast
-
-#=============================================================================
-# Target rules for targets named test_sock
-
-# Build rule for target.
-test_sock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_sock
-.PHONY : test_sock
-
-# fast build rule for target.
-test_sock/fast:
-	$(MAKE) -f CMakeFiles/test_sock.dir/build.make CMakeFiles/test_sock.dir/build
-.PHONY : test_sock/fast
 
 #=============================================================================
 # Target rules for targets named test_daemo
@@ -602,6 +641,33 @@ http/httpclient_parser.rl.cc.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/http/httpclient_parser.rl.cc.s
 .PHONY : http/httpclient_parser.rl.cc.s
 
+http/resourceServlet.o: http/resourceServlet.cc.o
+
+.PHONY : http/resourceServlet.o
+
+# target to build an object file
+http/resourceServlet.cc.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/http/resourceServlet.cc.o
+.PHONY : http/resourceServlet.cc.o
+
+http/resourceServlet.i: http/resourceServlet.cc.i
+
+.PHONY : http/resourceServlet.i
+
+# target to preprocess a source file
+http/resourceServlet.cc.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/http/resourceServlet.cc.i
+.PHONY : http/resourceServlet.cc.i
+
+http/resourceServlet.s: http/resourceServlet.cc.s
+
+.PHONY : http/resourceServlet.s
+
+# target to generate assembly for a file
+http/resourceServlet.cc.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/http/resourceServlet.cc.s
+.PHONY : http/resourceServlet.cc.s
+
 http/servlet.o: http/servlet.cc.o
 
 .PHONY : http/servlet.o
@@ -628,6 +694,33 @@ http/servlet.s: http/servlet.cc.s
 http/servlet.cc.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/http/servlet.cc.s
 .PHONY : http/servlet.cc.s
+
+sylar/application.o: sylar/application.cc.o
+
+.PHONY : sylar/application.o
+
+# target to build an object file
+sylar/application.cc.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/application.cc.o
+.PHONY : sylar/application.cc.o
+
+sylar/application.i: sylar/application.cc.i
+
+.PHONY : sylar/application.i
+
+# target to preprocess a source file
+sylar/application.cc.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/application.cc.i
+.PHONY : sylar/application.cc.i
+
+sylar/application.s: sylar/application.cc.s
+
+.PHONY : sylar/application.s
+
+# target to generate assembly for a file
+sylar/application.cc.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/application.cc.s
+.PHONY : sylar/application.cc.s
 
 sylar/bytearray.o: sylar/bytearray.cc.o
 
@@ -656,6 +749,33 @@ sylar/bytearray.cc.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/bytearray.cc.s
 .PHONY : sylar/bytearray.cc.s
 
+sylar/config.o: sylar/config.cc.o
+
+.PHONY : sylar/config.o
+
+# target to build an object file
+sylar/config.cc.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/config.cc.o
+.PHONY : sylar/config.cc.o
+
+sylar/config.i: sylar/config.cc.i
+
+.PHONY : sylar/config.i
+
+# target to preprocess a source file
+sylar/config.cc.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/config.cc.i
+.PHONY : sylar/config.cc.i
+
+sylar/config.s: sylar/config.cc.s
+
+.PHONY : sylar/config.s
+
+# target to generate assembly for a file
+sylar/config.cc.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/config.cc.s
+.PHONY : sylar/config.cc.s
+
 sylar/daemon.o: sylar/daemon.cc.o
 
 .PHONY : sylar/daemon.o
@@ -682,6 +802,33 @@ sylar/daemon.s: sylar/daemon.cc.s
 sylar/daemon.cc.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/daemon.cc.s
 .PHONY : sylar/daemon.cc.s
+
+sylar/env.o: sylar/env.cc.o
+
+.PHONY : sylar/env.o
+
+# target to build an object file
+sylar/env.cc.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/env.cc.o
+.PHONY : sylar/env.cc.o
+
+sylar/env.i: sylar/env.cc.i
+
+.PHONY : sylar/env.i
+
+# target to preprocess a source file
+sylar/env.cc.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/env.cc.i
+.PHONY : sylar/env.cc.i
+
+sylar/env.s: sylar/env.cc.s
+
+.PHONY : sylar/env.s
+
+# target to generate assembly for a file
+sylar/env.cc.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/env.cc.s
+.PHONY : sylar/env.cc.s
 
 sylar/fd_manager.o: sylar/fd_manager.cc.o
 
@@ -1142,6 +1289,33 @@ tests/test_addr.cc.s:
 	$(MAKE) -f CMakeFiles/test_addr.dir/build.make CMakeFiles/test_addr.dir/tests/test_addr.cc.s
 .PHONY : tests/test_addr.cc.s
 
+tests/test_application.o: tests/test_application.cc.o
+
+.PHONY : tests/test_application.o
+
+# target to build an object file
+tests/test_application.cc.o:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.o
+.PHONY : tests/test_application.cc.o
+
+tests/test_application.i: tests/test_application.cc.i
+
+.PHONY : tests/test_application.i
+
+# target to preprocess a source file
+tests/test_application.cc.i:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.i
+.PHONY : tests/test_application.cc.i
+
+tests/test_application.s: tests/test_application.cc.s
+
+.PHONY : tests/test_application.s
+
+# target to generate assembly for a file
+tests/test_application.cc.s:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.s
+.PHONY : tests/test_application.cc.s
+
 tests/test_bytearray.o: tests/test_bytearray.cc.o
 
 .PHONY : tests/test_bytearray.o
@@ -1222,6 +1396,33 @@ tests/test_daemo.s: tests/test_daemo.cc.s
 tests/test_daemo.cc.s:
 	$(MAKE) -f CMakeFiles/test_daemo.dir/build.make CMakeFiles/test_daemo.dir/tests/test_daemo.cc.s
 .PHONY : tests/test_daemo.cc.s
+
+tests/test_env.o: tests/test_env.cc.o
+
+.PHONY : tests/test_env.o
+
+# target to build an object file
+tests/test_env.cc.o:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.o
+.PHONY : tests/test_env.cc.o
+
+tests/test_env.i: tests/test_env.cc.i
+
+.PHONY : tests/test_env.i
+
+# target to preprocess a source file
+tests/test_env.cc.i:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.i
+.PHONY : tests/test_env.cc.i
+
+tests/test_env.s: tests/test_env.cc.s
+
+.PHONY : tests/test_env.s
+
+# target to generate assembly for a file
+tests/test_env.cc.s:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.s
+.PHONY : tests/test_env.cc.s
 
 tests/test_fiber.o: tests/test_fiber.cc.o
 
@@ -1439,6 +1640,33 @@ tests/test_mutex.cc.s:
 	$(MAKE) -f CMakeFiles/test_mutex.dir/build.make CMakeFiles/test_mutex.dir/tests/test_mutex.cc.s
 .PHONY : tests/test_mutex.cc.s
 
+tests/test_my.o: tests/test_my.cc.o
+
+.PHONY : tests/test_my.o
+
+# target to build an object file
+tests/test_my.cc.o:
+	$(MAKE) -f CMakeFiles/test_my.dir/build.make CMakeFiles/test_my.dir/tests/test_my.cc.o
+.PHONY : tests/test_my.cc.o
+
+tests/test_my.i: tests/test_my.cc.i
+
+.PHONY : tests/test_my.i
+
+# target to preprocess a source file
+tests/test_my.cc.i:
+	$(MAKE) -f CMakeFiles/test_my.dir/build.make CMakeFiles/test_my.dir/tests/test_my.cc.i
+.PHONY : tests/test_my.cc.i
+
+tests/test_my.s: tests/test_my.cc.s
+
+.PHONY : tests/test_my.s
+
+# target to generate assembly for a file
+tests/test_my.cc.s:
+	$(MAKE) -f CMakeFiles/test_my.dir/build.make CMakeFiles/test_my.dir/tests/test_my.cc.s
+.PHONY : tests/test_my.cc.s
+
 tests/test_scheduler.o: tests/test_scheduler.cc.o
 
 .PHONY : tests/test_scheduler.o
@@ -1613,7 +1841,12 @@ help:
 	@echo "... test_scheduler"
 	@echo "... testassert"
 	@echo "... test_hook"
+	@echo "... test_sock"
+	@echo "... test_my"
+	@echo "... test_addr"
+	@echo "... test_application"
 	@echo "... sylar"
+	@echo "... test_env"
 	@echo "... test_iomanager"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
@@ -1626,8 +1859,6 @@ help:
 	@echo "... test_http_parser"
 	@echo "... test_tcp_server"
 	@echo "... test_bytearray"
-	@echo "... test_addr"
-	@echo "... test_sock"
 	@echo "... test_daemo"
 	@echo "... test_http"
 	@echo "... example/echoServer.o"
@@ -1654,15 +1885,27 @@ help:
 	@echo "... http/httpclient_parser.rl.o"
 	@echo "... http/httpclient_parser.rl.i"
 	@echo "... http/httpclient_parser.rl.s"
+	@echo "... http/resourceServlet.o"
+	@echo "... http/resourceServlet.i"
+	@echo "... http/resourceServlet.s"
 	@echo "... http/servlet.o"
 	@echo "... http/servlet.i"
 	@echo "... http/servlet.s"
+	@echo "... sylar/application.o"
+	@echo "... sylar/application.i"
+	@echo "... sylar/application.s"
 	@echo "... sylar/bytearray.o"
 	@echo "... sylar/bytearray.i"
 	@echo "... sylar/bytearray.s"
+	@echo "... sylar/config.o"
+	@echo "... sylar/config.i"
+	@echo "... sylar/config.s"
 	@echo "... sylar/daemon.o"
 	@echo "... sylar/daemon.i"
 	@echo "... sylar/daemon.s"
+	@echo "... sylar/env.o"
+	@echo "... sylar/env.i"
+	@echo "... sylar/env.s"
 	@echo "... sylar/fd_manager.o"
 	@echo "... sylar/fd_manager.i"
 	@echo "... sylar/fd_manager.s"
@@ -1714,6 +1957,9 @@ help:
 	@echo "... tests/test_addr.o"
 	@echo "... tests/test_addr.i"
 	@echo "... tests/test_addr.s"
+	@echo "... tests/test_application.o"
+	@echo "... tests/test_application.i"
+	@echo "... tests/test_application.s"
 	@echo "... tests/test_bytearray.o"
 	@echo "... tests/test_bytearray.i"
 	@echo "... tests/test_bytearray.s"
@@ -1723,6 +1969,9 @@ help:
 	@echo "... tests/test_daemo.o"
 	@echo "... tests/test_daemo.i"
 	@echo "... tests/test_daemo.s"
+	@echo "... tests/test_env.o"
+	@echo "... tests/test_env.i"
+	@echo "... tests/test_env.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
@@ -1747,6 +1996,9 @@ help:
 	@echo "... tests/test_mutex.o"
 	@echo "... tests/test_mutex.i"
 	@echo "... tests/test_mutex.s"
+	@echo "... tests/test_my.o"
+	@echo "... tests/test_my.i"
+	@echo "... tests/test_my.s"
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"

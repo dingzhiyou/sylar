@@ -3,6 +3,7 @@
 
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: sylar/bytearray.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: sylar/config.h
+CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: sylar/env.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: sylar/fiber.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: sylar/hook.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: sylar/iomanager.h

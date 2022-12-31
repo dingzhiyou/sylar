@@ -4,6 +4,7 @@
 CMakeFiles/echoServer.dir/example/echoServer.cc.o: example/echoServer.cc
 CMakeFiles/echoServer.dir/example/echoServer.cc.o: sylar/bytearray.h
 CMakeFiles/echoServer.dir/example/echoServer.cc.o: sylar/config.h
+CMakeFiles/echoServer.dir/example/echoServer.cc.o: sylar/env.h
 CMakeFiles/echoServer.dir/example/echoServer.cc.o: sylar/fiber.h
 CMakeFiles/echoServer.dir/example/echoServer.cc.o: sylar/hook.h
 CMakeFiles/echoServer.dir/example/echoServer.cc.o: sylar/iomanager.h

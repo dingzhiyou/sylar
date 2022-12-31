@@ -1,11 +1,19 @@
 #include "util.h"
 #include "fiber.h"
+#include <cstdlib>
+#include<dirent.h>
+#include <fstream>
+#include <string>
+#include<sys/types.h>
 #include"log.h"
 #include <bits/types/struct_timeval.h>
 #include <ctime>
 #include<execinfo.h>
 #include <sstream>
 #include <sys/select.h>
+#include <unistd.h>
+#include <signal.h>
+#include <sys/types.h>
 namespace sylar{
 static Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 
@@ -67,6 +75,75 @@ uint64_t GetCurrentMs(){
 	return tv.tv_sec * 1000 + tv.tv_usec / 1000;	
 
 }
+
+
+void FSUtil::ListAllFiles(std::vector<std::string>& files,const std::string& path,const std::string& prefix){
+	if(access(path.c_str(),0) != 0){
+		return;
+	}
+	DIR* dir = opendir(path.c_str());
+	if(dir == nullptr){
+		return;
+	}
+
+	struct dirent* dp = nullptr;
+	while((dp = readdir(dir)) != nullptr){
+		if(dp->d_type == DT_DIR){
+			if(dp->d_name == std::string(".") || dp->d_name == std::string("..")){
+				continue;
+			}
+			ListAllFiles(files,path + "/" + dp->d_name,prefix);
+		}else if(dp->d_type == DT_REG){
+			std::string filename(dp->d_name);
+			if(prefix.empty()){
+				files.push_back(path + "/" + filename);
+			}else{
+				if(filename.size() < prefix.size()){
+					continue;			
+				}
+				if(filename.substr(filename.size() - prefix.size())== prefix){
+					files.push_back(path + "/" + dp->d_name);
+				}
+			}
+
+		}
+
+
+
+	}
+	closedir(dir);
+
+}
+bool FSUtil::IsRunningPidFile(const std::string &file){
+	if(access(file.c_str(), F_OK) != 0){
+		return true;
+	}
+	std::ifstream ifs;
+	ifs.open(file);
+	std::string line;
+	if(!ifs ){
+		SYLAR_LOG_DEBUG(g_logger) << " ---------- ";
+		return false;
+	}
+	std::getline(ifs,line);
+	SYLAR_LOG_DEBUG(g_logger) << "line"<<line;
+	if(line.empty()){
+		SYLAR_LOG_DEBUG(g_logger) << " ---------- ";
+		return false;
+	}
+	pid_t pid = atoi(line.c_str());
+	if(pid < 1){
+		SYLAR_LOG_DEBUG(g_logger) << " ---------- ";
+		return false;
+	}
+
+	if(!kill(pid,0)){
+		SYLAR_LOG_DEBUG(g_logger) << " ---------- ";
+		return false;
+	}
+	return true;
+}
+
 
 
 }

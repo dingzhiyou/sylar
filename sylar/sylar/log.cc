@@ -2,6 +2,7 @@
 #include "log.h"
 #include <cctype>
 #include <ctime>
+#include"fiber.h"
 #include<string.h>
 #include <functional>
 #include<iostream>
@@ -15,6 +16,7 @@
 namespace sylar{
 LoggerManager::LoggerManager()
 {
+	Fiber::GetThis();
 	m_root.reset(new Logger);
 	m_root->addAppender(LogAppender::ptr(new StdoutLogAppender));
 }
@@ -22,7 +24,6 @@ void LoggerManager::init(){
 
 
 }
-
 struct LogAppenderDefine{
 	int type = 1;
 	LogLevel::Level level = LogLevel::Level::UNKNOW;
@@ -435,7 +436,7 @@ bool FileLogAppender::reopen()
 	{
 		m_filestream.close();
 	}
-	m_filestream.open(m_filename);
+	m_filestream.open(m_filename,std::ios::app);
 	return !!m_filestream ;
 }
 LogEvent::LogEvent(std::shared_ptr<Logger> logger,LogLevel::Level level,const char* file

@@ -1,0 +1,976 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Address	ipaddr.h	/^class Address{$/;"	c	namespace:sylar
+Alloc	fiber.cc	/^	static void* Alloc(uint32_t size){$/;"	f	class:sylar::MallocStackAllocator
+Application	Application.cc	/^Application::Application(){$/;"	f	class:sylar::Application
+Application	application.h	/^class Application{$/;"	c	namespace:sylar
+Backtrace	util.cc	/^void Backtrace(std::vector<std::string> &bt, int size, int skip){$/;"	f	namespace:sylar
+BacktraceToString	util.cc	/^std::string BacktraceToString(int size, int skip){$/;"	f	namespace:sylar
+ByteArray	bytearray.cc	/^ByteArray::ByteArray(size_t base_size):m_baseSize(base_size)$/;"	f	class:sylar::ByteArray
+ByteArray	bytearray.h	/^class ByteArray{$/;"	c	namespace:sylar
+CallerMainFunc	fiber.cc	/^void Fiber::CallerMainFunc(){$/;"	f	class:sylar::Fiber
+Comparator	timer.h	/^	struct Comparator{$/;"	s	class:sylar::Timer
+Config	config.h	/^class Config{$/;"	c	namespace:sylar
+ConfigMap	config.h	/^	typedef std::map<std::string ,ConfigVarBase::ptr> ConfigMap;$/;"	t	class:sylar::Config
+ConfigVar	config.h	/^	ConfigVar(const std::string name,T default_val, const std::string& desc="")$/;"	f	class:sylar::ConfigVar
+ConfigVar	config.h	/^class ConfigVar :public ConfigVarBase{$/;"	c	namespace:sylar
+ConfigVarBase	config.h	/^	ConfigVarBase(const std::string& name,const std::string& desc = "")$/;"	f	class:sylar::ConfigVarBase
+ConfigVarBase	config.h	/^class ConfigVarBase{$/;"	c	namespace:sylar
+CountBytes	ipaddr.cc	/^static uint32_t CountBytes(T value){$/;"	f	namespace:sylar
+Create	ipaddr.cc	/^Address::ptr Address::Create(const sockaddr* addr,socklen_t addrlen){$/;"	f	class:sylar::Address
+Create	ipaddr.cc	/^IPAddress::ptr IPAddress::Create(const char* address, uint16_t port){$/;"	f	class:sylar::IPAddress
+Create	ipaddr.cc	/^IPv4Address::ptr IPv4Address::Create(const char* address,uint16_t port){$/;"	f	class:sylar::IPv4Address
+Create	ipaddr.cc	/^IPv6Address::ptr Create(const char* addr,uint16_t port){$/;"	f	namespace:sylar
+Create	uri.rl.cc	/^Uri::ptr Uri::Create(const std::string& uristr) {$/;"	f	class:sylar::Uri
+CreateMask	ipaddr.cc	/^static T CreateMask(uint32_t bits){$/;"	f	namespace:sylar
+CreateTCP	socket.cc	/^Socket::ptr Socket::CreateTCP(Address::ptr address){$/;"	f	class:sylar::Socket
+CreateTCPSocket	socket.cc	/^Socket::ptr Socket::CreateTCPSocket(){$/;"	f	class:sylar::Socket
+CreateUDP	socket.cc	/^Socket::ptr Socket::CreateUDP(Address::ptr address){$/;"	f	class:sylar::Socket
+CreateUDPSocket	socket.cc	/^Socket::ptr Socket::CreateUDPSocket(){$/;"	f	class:sylar::Socket
+CreateUnixTCPSocket	socket.cc	/^Socket::ptr Socket::CreateUnixTCPSocket(){$/;"	f	class:sylar::Socket
+CreateUnixUDPSocket	socket.cc	/^Socket::ptr Socket::CreateUnixUDPSocket(){$/;"	f	class:sylar::Socket
+DEBUG	log.h	/^	    DEBUG = 1,$/;"	e	enum:sylar::LogLevel::Level
+DateTimeFormatItem	log.cc	/^	DateTimeFormatItem(const std::string format="%Y-%m-%d %H:%M:%s")$/;"	f	class:sylar::DateTimeFormatItem
+DateTimeFormatItem	log.cc	/^class DateTimeFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+Dealloc	fiber.cc	/^	static void Dealloc(void* vp,size_t size){$/;"	f	class:sylar::MallocStackAllocator
+DecodeZigzag32	bytearray.cc	/^static uint32_t DecodeZigzag32(const uint32_t& v){$/;"	f	namespace:sylar
+DecodeZigzag64	bytearray.cc	/^static uint64_t DecodeZigzag64(const uint64_t& v){$/;"	f	namespace:sylar
+ERROR	log.h	/^	    ERROR = 4,$/;"	e	enum:sylar::LogLevel::Level
+EXCEPT	fiber.h	/^		EXCEPT$/;"	e	enum:sylar::Fiber::State
+EXEC	fiber.h	/^		EXEC,$/;"	e	enum:sylar::Fiber::State
+ElapseFormatItem	log.cc	/^	ElapseFormatItem(const std::string& str=""){}$/;"	f	class:sylar::ElapseFormatItem
+ElapseFormatItem	log.cc	/^class ElapseFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+EncodeZigzag32	bytearray.cc	/^static uint32_t EncodeZigzag32(const int32_t& v){$/;"	f	namespace:sylar
+EncodeZigzag64	bytearray.cc	/^static uint64_t EncodeZigzag64(const int64_t& v){$/;"	f	namespace:sylar
+Env	env.h	/^class Env{$/;"	c	namespace:sylar
+EnvMgr	env.h	/^typedef Singleton<Env> EnvMgr;$/;"	t	namespace:sylar
+Event	iomanager.h	/^	enum Event{$/;"	g	class:sylar::IOManager
+EventContext	iomanager.h	/^		struct EventContext{$/;"	s	struct:sylar::IOManager::FdContext
+FATAL	log.h	/^	    FATAL = 5$/;"	e	enum:sylar::LogLevel::Level
+FSUtil	util.h	/^	class FSUtil{$/;"	c	namespace:sylar
+FdContext	iomanager.h	/^	struct FdContext{$/;"	s	class:sylar::IOManager
+FdCtx	fd_manager.cc	/^FdCtx::FdCtx(int fd)$/;"	f	class:sylar::FdCtx
+FdCtx	fd_manager.h	/^class FdCtx: public std::enable_shared_from_this<FdCtx>{$/;"	c	namespace:sylar
+FdManager	fd_manager.cc	/^FdManager::FdManager(){$/;"	f	class:sylar::FdManager
+FdManager	fd_manager.h	/^class FdManager{$/;"	c	namespace:sylar
+FdMgr	fd_manager.h	/^typedef Singleton<FdManager> FdMgr;$/;"	t	namespace:sylar
+Fiber	fiber.cc	/^Fiber::Fiber(){$/;"	f	class:sylar::Fiber
+Fiber	fiber.cc	/^Fiber::Fiber(std::function<void()> cb,size_t stacksize,bool use_caller):m_id(++s_fiber_id)$/;"	f	class:sylar::Fiber
+Fiber	fiber.h	/^class Fiber : public std::enable_shared_from_this<Fiber>{$/;"	c	namespace:sylar
+FiberAndThread	scheduler.h	/^		FiberAndThread():thread(-1){$/;"	f	struct:sylar::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(Fiber::ptr f,int thr):$/;"	f	struct:sylar::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(Fiber::ptr* f,int thr):$/;"	f	struct:sylar::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(std::function<void()> c,int thr):$/;"	f	struct:sylar::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(std::function<void()>* c,int thr):$/;"	f	struct:sylar::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^	struct FiberAndThread{$/;"	s	class:sylar::Scheduler
+FiberIdFormatItem	log.cc	/^	FiberIdFormatItem(const std::string& str=""){}$/;"	f	class:sylar::FiberIdFormatItem
+FiberIdFormatItem	log.cc	/^class FiberIdFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+FileLogAppender	log.cc	/^FileLogAppender::FileLogAppender(const std::string& filename)$/;"	f	class:sylar::FileLogAppender
+FileLogAppender	log.h	/^class FileLogAppender : public LogAppender$/;"	c	namespace:sylar
+FilenameFormatItem	log.cc	/^	FilenameFormatItem(const std::string& str=""){}$/;"	f	class:sylar::FilenameFormatItem
+FilenameFormatItem	log.cc	/^class FilenameFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+FormatItem	log.h	/^	class FormatItem{$/;"	c	class:sylar::LogFormatter
+GetCurrentMs	util.cc	/^uint64_t GetCurrentMs(){$/;"	f	namespace:sylar
+GetCurrentUs	util.cc	/^uint64_t GetCurrentUs(){$/;"	f	namespace:sylar
+GetFiberId	fiber.cc	/^uint64_t Fiber::GetFiberId(){$/;"	f	class:sylar::Fiber
+GetFriberId	util.cc	/^uint32_t GetFriberId(){$/;"	f	namespace:sylar
+GetInstance	singleton.h	/^	static T* GetInstance()$/;"	f	class:sylar::Singleton
+GetInstance	singleton.h	/^	static std::shared_ptr<T> GetInstance()$/;"	f	class:sylar::SingletonPtr
+GetInterfaceAddress	ipaddr.cc	/^bool Address::GetInterfaceAddress(std::multimap<std::string,std::pair<Address::ptr,uint32_t> >& result,int family){$/;"	f	class:sylar::Address
+GetInterfaceAddress	ipaddr.cc	/^bool Address::GetInterfaceAddress(std::vector<std::pair<Address::ptr,uint32_t> >& result,const std::string& iface,int family){$/;"	f	class:sylar::Address
+GetMainFiber	scheduler.cc	/^Fiber* Scheduler::GetMainFiber(){$/;"	f	class:sylar::Scheduler
+GetName	thread.cc	/^std::string Thread::GetName() {$/;"	f	class:sylar::Thread
+GetThis	fiber.cc	/^Fiber::ptr Fiber::GetThis(){$/;"	f	class:sylar::Fiber
+GetThis	iomanager.cc	/^IOManager* IOManager::GetThis(){$/;"	f	class:sylar::IOManager
+GetThis	scheduler.cc	/^Scheduler* Scheduler::GetThis(){$/;"	f	class:sylar::Scheduler
+GetThis	thread.cc	/^Thread* Thread::GetThis(){$/;"	f	class:sylar::Thread
+GetThreadId	util.cc	/^pid_t GetThreadId(){$/;"	f	namespace:sylar
+HOLD	fiber.h	/^		HOLD,$/;"	e	enum:sylar::Fiber::State
+HOOK_FUN	hook.cc	21;"	d	file:
+HookIniter	hook.cc	/^	HookIniter(){$/;"	f	struct:sylar::HookIniter
+HookIniter	hook.cc	/^struct HookIniter{$/;"	s	namespace:sylar	file:
+INFO	log.h	/^	    INFO = 2,$/;"	e	enum:sylar::LogLevel::Level
+INIT	fiber.h	/^		INIT,$/;"	e	enum:sylar::Fiber::State
+IOManager	iomanager.cc	/^IOManager::IOManager(size_t threads ,bool use_caller ,const std::string& name)$/;"	f	class:sylar::IOManager
+IOManager	iomanager.h	/^class IOManager: public Scheduler , public TimerManager{$/;"	c	namespace:sylar
+IPAddress	ipaddr.h	/^class IPAddress:public Address{$/;"	c	namespace:sylar
+IPv4	socket.h	/^		IPv4 = AF_INET,$/;"	e	enum:sylar::Socket::__anon2
+IPv4Address	ipaddr.cc	/^IPv4Address::IPv4Address(const sockaddr_in& address){$/;"	f	class:sylar::IPv4Address
+IPv4Address	ipaddr.cc	/^IPv4Address::IPv4Address(uint32_t address,uint16_t port){$/;"	f	class:sylar::IPv4Address
+IPv4Address	ipaddr.h	/^class IPv4Address: public IPAddress{$/;"	c	namespace:sylar
+IPv6	socket.h	/^		IPv6 = AF_INET6,$/;"	e	enum:sylar::Socket::__anon2
+IPv6Address	ipaddr.cc	/^IPv6Address::IPv6Address(){$/;"	f	class:sylar::IPv6Address
+IPv6Address	ipaddr.cc	/^IPv6Address::IPv6Address(const sockaddr_in6& address){$/;"	f	class:sylar::IPv6Address
+IPv6Address	ipaddr.cc	/^IPv6Address::IPv6Address(const uint8_t address[16],uint16_t port){$/;"	f	class:sylar::IPv6Address
+IPv6Address	ipaddr.h	/^class IPv6Address: public IPAddress{$/;"	c	namespace:sylar
+IsRunningPidFile	util.cc	/^bool FSUtil::IsRunningPidFile(const std::string &file){$/;"	f	class:sylar::FSUtil
+Level	log.h	/^	enum Level{$/;"	g	class:sylar::LogLevel
+LevelFormatItem	log.cc	/^	LevelFormatItem(const std::string& str=""){}$/;"	f	class:sylar::LevelFormatItem
+LevelFormatItem	log.cc	/^class LevelFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+LexicalCast	config.h	/^class LexicalCast<std::list<T> , std::string >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::map<std::string,T> , std::string >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::set<T> , std::string >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::string,std::list<T> >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::string,std::map<std::string,T> >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::string,std::set<T> >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_map<std::string,T> >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_set<T> >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::string,std::vector<T> >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::unordered_map<std::string,T> , std::string >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::unordered_set<T> , std::string >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast<std::vector<T>,std::string >{$/;"	c	namespace:sylar
+LexicalCast	config.h	/^class LexicalCast{$/;"	c	namespace:sylar
+LineFormatItem	log.cc	/^	LineFormatItem(const std::string& str=""){}$/;"	f	class:sylar::LineFormatItem
+LineFormatItem	log.cc	/^class LineFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+ListAllFiles	util.cc	/^void FSUtil::ListAllFiles(std::vector<std::string>& files,const std::string& path,const std::string& prefix){$/;"	f	class:sylar::FSUtil
+ListAllMember	config.h	/^static void ListAllMember(std::string prefix,const YAML::Node& node, std::list<std::pair<std::string,const YAML::Node> >& output){$/;"	f	namespace:sylar
+LoadFromConDir	config.h	/^void Config::LoadFromConDir(const std::string& path){$/;"	f	class:sylar::Config
+LoadFromYaml	config.h	/^void Config::LoadFromYaml(YAML::Node root){$/;"	f	class:sylar::Config
+Lock	thread.h	/^	typedef ScopeLockImpl<Mutex> Lock;$/;"	t	class:sylar::Mutex
+Lock	thread.h	/^	typedef ScopeLockImpl<Spinlock> Lock;$/;"	t	class:sylar::Spinlock
+LogAppender	log.h	/^	LogAppender():m_level(sylar::LogLevel::Level::DEBUG){}$/;"	f	class:sylar::LogAppender
+LogAppender	log.h	/^class LogAppender{$/;"	c	namespace:sylar
+LogAppenderDefine	log.cc	/^struct LogAppenderDefine{$/;"	s	namespace:sylar	file:
+LogDefine	log.cc	/^struct LogDefine{$/;"	s	namespace:sylar	file:
+LogEvent	log.cc	/^LogEvent::LogEvent(std::shared_ptr<Logger> logger,LogLevel::Level level,const char* file$/;"	f	class:sylar::LogEvent
+LogEvent	log.h	/^class LogEvent{$/;"	c	namespace:sylar
+LogEventWarp	log.h	/^	LogEventWarp(LogEvent::ptr event):m_event(event)$/;"	f	class:sylar::LogEventWarp
+LogEventWarp	log.h	/^class LogEventWarp$/;"	c	namespace:sylar
+LogFormatter	log.cc	/^LogFormatter::LogFormatter(const std::string& pattern)$/;"	f	class:sylar::LogFormatter
+LogFormatter	log.h	/^class LogFormatter{$/;"	c	namespace:sylar
+LogLevel	log.h	/^class LogLevel{$/;"	c	namespace:sylar
+Logger	log.cc	/^Logger::Logger(const std::string& name):$/;"	f	class:sylar::Logger
+Logger	log.h	/^class Logger :public std::enable_shared_from_this<Logger>{$/;"	c	namespace:sylar
+LoggerManager	log.cc	/^LoggerManager::LoggerManager()$/;"	f	class:sylar::LoggerManager
+LoggerManager	log.h	/^class LoggerManager{$/;"	c	namespace:sylar
+LoggerMgr	log.h	/^typedef  sylar::Singleton<LoggerManager> LoggerMgr;$/;"	t	namespace:sylar
+Lookup	config.h	/^	static typename ConfigVar<T>::ptr Lookup(const std::string& name ,const T& default_val$/;"	f	class:sylar::Config
+Lookup	config.h	/^	static typename ConfigVar<T>::ptr Lookup(const std::string& name){$/;"	f	class:sylar::Config
+Lookup	ipaddr.cc	/^bool Address::Lookup(std::vector<Address::ptr>& vec,const std::string& host,int family,int type,int protocol){$/;"	f	class:sylar::Address
+LookupAny	ipaddr.cc	/^Address::ptr Address::LookupAny(const std::string& host,int family,int type,int protocol){$/;"	f	class:sylar::Address
+LookupAnyIPAddress	ipaddr.cc	/^std::shared_ptr<IPAddress> Address::LookupAnyIPAddress(const std::string& host,int family,int type,int protocol){$/;"	f	class:sylar::Address
+LookupBase	config.h	/^ConfigVarBase::ptr Config::LookupBase(const std::string& name){$/;"	f	class:sylar::Config
+MAX_PATH_LEN	ipaddr.cc	/^static const size_t  MAX_PATH_LEN = sizeof(((sockaddr_un*)0)->sun_path) - 1;$/;"	m	namespace:sylar	file:
+MainFunc	fiber.cc	/^void Fiber::MainFunc(){$/;"	f	class:sylar::Fiber
+MallocStackAllocator	fiber.cc	/^class MallocStackAllocator{$/;"	c	namespace:sylar	file:
+MessageFormatItem	log.cc	/^	MessageFormatItem(const std::string& str=""){}$/;"	f	class:sylar::MessageFormatItem
+MessageFormatItem	log.cc	/^class MessageFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+Mutex	thread.h	/^	Mutex(){$/;"	f	class:sylar::Mutex
+Mutex	thread.h	/^class Mutex : public Noncopyable{$/;"	c	namespace:sylar
+MutexType	env.h	/^	typedef RWMutex MutexType;$/;"	t	class:sylar::Env
+MutexType	fd_manager.h	/^	typedef RWMutex MutexType;$/;"	t	class:sylar::FdManager
+MutexType	iomanager.h	/^		typedef Mutex MutexType;$/;"	t	struct:sylar::IOManager::FdContext
+MutexType	iomanager.h	/^	typedef RWMutex MutexType;$/;"	t	class:sylar::IOManager
+MutexType	scheduler.h	/^	typedef Mutex  MutexType;$/;"	t	class:sylar::Scheduler
+MutexType	timer.h	/^	typedef RWMutex MutexType;$/;"	t	class:sylar::TimerManager
+NONE	iomanager.h	/^		NONE = 0x0,$/;"	e	enum:sylar::IOManager::Event
+NameFormatItem	log.cc	/^	NameFormatItem(const std::string& str=""){}$/;"	f	class:sylar::NameFormatItem
+NameFormatItem	log.cc	/^class NameFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+NewLineFormatItem	log.cc	/^	NewLineFormatItem(const std::string& str=""){}$/;"	f	class:sylar::NewLineFormatItem
+NewLineFormatItem	log.cc	/^class NewLineFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+Node	bytearray.cc	/^ByteArray::Node::Node():ptr(nullptr)$/;"	f	class:sylar::ByteArray::Node
+Node	bytearray.cc	/^ByteArray::Node::Node(size_t s):ptr(new char[s])$/;"	f	class:sylar::ByteArray::Node
+Node	bytearray.h	/^	struct Node{$/;"	s	class:sylar::ByteArray
+Noncopyable	noncopyable.h	/^	Noncopyable(){}$/;"	f	class:sylar::Noncopyable
+Noncopyable	noncopyable.h	/^class Noncopyable{$/;"	c	namespace:sylar
+OnTimer	timer.cc	/^static void OnTimer(std::weak_ptr<void> weak_cond,std::function<void()> cb){$/;"	f	namespace:sylar
+ProcessInfo	daemon.h	/^struct ProcessInfo{$/;"	s	namespace:sylar
+ProcessInfoMgr	daemon.h	/^typedef Singleton<ProcessInfo> ProcessInfoMgr;$/;"	t	namespace:sylar
+READ	iomanager.h	/^		READ = 0x1,$/;"	e	enum:sylar::IOManager::Event
+READY	fiber.h	/^		READY,$/;"	e	enum:sylar::Fiber::State
+RWMutex	thread.h	/^	RWMutex(){$/;"	f	class:sylar::RWMutex
+RWMutex	thread.h	/^class RWMutex{$/;"	c	namespace:sylar
+ReadLock	thread.h	/^	typedef ReadScopeLockImpl<RWMutex>  ReadLock;$/;"	t	class:sylar::RWMutex
+ReadScopeLockImpl	thread.h	/^	ReadScopeLockImpl(T & mutex):m_mutex(mutex){$/;"	f	struct:sylar::ReadScopeLockImpl
+ReadScopeLockImpl	thread.h	/^struct ReadScopeLockImpl{$/;"	s	namespace:sylar
+STACKSIZE	fiber.cc	15;"	d	file:
+SYLAR_ASSERT	macro.h	18;"	d
+SYLAR_ASSERT2	macro.h	26;"	d
+SYLAR_BIG_ENDIAN	endian.h	9;"	d
+SYLAR_BYTE_ORDER	endian.h	31;"	d
+SYLAR_BYTE_ORDER	endian.h	33;"	d
+SYLAR_LICKLY	macro.h	10;"	d
+SYLAR_LICKLY	macro.h	14;"	d
+SYLAR_LITTLE_ENDIAN	endian.h	8;"	d
+SYLAR_LOG_DEBUG	log.h	22;"	d
+SYLAR_LOG_ERROR	log.h	25;"	d
+SYLAR_LOG_FATAL	log.h	26;"	d
+SYLAR_LOG_INFO	log.h	24;"	d
+SYLAR_LOG_LEVEL	log.h	17;"	d
+SYLAR_LOG_NAME	log.h	29;"	d
+SYLAR_LOG_ROOT	log.h	28;"	d
+SYLAR_LOG_WARN	log.h	23;"	d
+SYLAR_UNLICKLY	macro.h	11;"	d
+SYLAR_UNLICKLY	macro.h	15;"	d
+Scheduler	scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string& name):m_name(name){$/;"	f	class:sylar::Scheduler
+Scheduler	scheduler.h	/^class Scheduler{$/;"	c	namespace:sylar
+ScopeLockImpl	thread.h	/^	ScopeLockImpl(T & mutex):m_mutex(mutex){$/;"	f	struct:sylar::ScopeLockImpl
+ScopeLockImpl	thread.h	/^struct ScopeLockImpl{$/;"	s	namespace:sylar
+Semaphore	thread.cc	/^Semaphore::Semaphore(uint32_t count){$/;"	f	class:sylar::Semaphore
+Semaphore	thread.h	/^class Semaphore : public Noncopyable{$/;"	c	namespace:sylar
+SetName	thread.cc	/^void Thread::SetName(const std::string& name){$/;"	f	class:sylar::Thread
+SetThis	fiber.cc	/^void Fiber::SetThis(Fiber *f){$/;"	f	class:sylar::Fiber
+Singleton	singleton.h	/^class Singleton{$/;"	c	namespace:sylar
+SingletonPtr	singleton.h	/^class SingletonPtr{$/;"	c	namespace:sylar
+SockStream	sockstream.cc	/^SockStream::SockStream(Socket::ptr sock,bool own):m_sock(sock)$/;"	f	class:sylar::SockStream
+SockStream	sockstream.h	/^class SockStream : public Stream{$/;"	c	namespace:sylar
+Socket	socket.cc	/^Socket::Socket(int family,int type,int protocal):m_sock(-1)$/;"	f	class:sylar::Socket
+Socket	socket.h	/^class Socket: public std::enable_shared_from_this<Socket>,Noncopyable{$/;"	c	namespace:sylar
+Spinlock	thread.h	/^	Spinlock(){$/;"	f	class:sylar::Spinlock
+Spinlock	thread.h	/^class Spinlock: public Noncopyable{$/;"	c	namespace:sylar
+State	fiber.h	/^	enum State{$/;"	g	class:sylar::Fiber
+StdoutLogAppender	log.h	/^class StdoutLogAppender : public LogAppender$/;"	c	namespace:sylar
+Stream	stream.cc	/^Stream::Stream(){$/;"	f	class:sylar::Stream
+Stream	stream.h	/^class Stream{$/;"	c	namespace:sylar
+StringFormatItem	log.cc	/^	StringFormatItem(const std::string& str)$/;"	f	class:sylar::StringFormatItem
+StringFormatItem	log.cc	/^class StringFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+TCP	socket.h	/^		TCP = SOCK_STREAM,$/;"	e	enum:sylar::Socket::__anon1
+TERM	fiber.h	/^		TERM,$/;"	e	enum:sylar::Fiber::State
+TabFormatItem	log.cc	/^	TabFormatItem(const std::string& str=""){}$/;"	f	class:sylar::TabFormatItem
+TabFormatItem	log.cc	/^class TabFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+TcpServer	tcp_server.cc	/^TcpServer::TcpServer(IOManager* worker,IOManager* acceptWorker)$/;"	f	class:sylar::TcpServer
+TcpServer	tcp_server.h	/^class TcpServer : public std::enable_shared_from_this<TcpServer>{$/;"	c	namespace:sylar
+Thread	thread.cc	/^Thread::Thread(std::function<void()> cb,const std::string& name):m_cb(cb),m_name(name){$/;"	f	class:sylar::Thread
+Thread	thread.h	/^class Thread: public Noncopyable{$/;"	c	namespace:sylar
+ThreadIdFormatItem	log.cc	/^	ThreadIdFormatItem(const std::string& str=""){}$/;"	f	class:sylar::ThreadIdFormatItem
+ThreadIdFormatItem	log.cc	/^class ThreadIdFormatItem: public LogFormatter::FormatItem{$/;"	c	namespace:sylar	file:
+Time2Str	util.cc	/^std::string Time2Str(time_t ts,const std::string& format ){$/;"	f	namespace:sylar
+Timer	timer.cc	/^Timer::Timer(uint64_t ms,std::function<void()> cb, bool recurring,TimerManager* manager): $/;"	f	class:sylar::Timer
+Timer	timer.h	/^class Timer : public std::enable_shared_from_this<Timer>{$/;"	c	namespace:sylar
+TimerManager	timer.cc	/^TimerManager::TimerManager(){$/;"	f	class:sylar::TimerManager
+TimerManager	timer.h	/^class TimerManager{$/;"	c	namespace:sylar
+TotalFibers	fiber.cc	/^uint64_t Fiber::TotalFibers(){$/;"	f	class:sylar::Fiber
+UDP	socket.h	/^		UDP = SOCK_DGRAM,$/;"	e	enum:sylar::Socket::__anon1
+UNIX	socket.h	/^		UNIX = AF_UNIX,$/;"	e	enum:sylar::Socket::__anon2
+UNKNOW	log.h	/^	    UNKNOW = 0,$/;"	e	enum:sylar::LogLevel::Level
+UnixAddress	ipaddr.cc	/^UnixAddress::UnixAddress(){$/;"	f	class:sylar::UnixAddress
+UnixAddress	ipaddr.cc	/^UnixAddress::UnixAddress(const std::string& path){$/;"	f	class:sylar::UnixAddress
+UnixAddress	ipaddr.h	/^class UnixAddress: public Address{$/;"	c	namespace:sylar
+UnknowAddress	ipaddr.cc	/^UnknowAddress::UnknowAddress(const sockaddr addr){$/;"	f	class:sylar::UnknowAddress
+UnknowAddress	ipaddr.cc	/^UnknowAddress::UnknowAddress(int family){$/;"	f	class:sylar::UnknowAddress
+UnknowAddress	ipaddr.h	/^class UnknowAddress:public Address{$/;"	c	namespace:sylar
+Uri	uri.h	/^class Uri{$/;"	c	namespace:sylar
+Uri	uri.rl.cc	/^Uri::Uri()$/;"	f	class:sylar::Uri
+WARN	log.h	/^	    WARN = 3,$/;"	e	enum:sylar::LogLevel::Level
+WRITE	iomanager.h	/^		WRITE = 0x4,$/;"	e	enum:sylar::IOManager::Event
+WriteLock	thread.h	/^	typedef WriteScopeLockImpl<RWMutex> WriteLock;$/;"	t	class:sylar::RWMutex
+WriteScopeLockImpl	thread.h	/^	WriteScopeLockImpl(T & mutex):m_mutex(mutex){$/;"	f	struct:sylar::WriteScopeLockImpl
+WriteScopeLockImpl	thread.h	/^struct WriteScopeLockImpl{$/;"	s	namespace:sylar
+XX	hook.cc	/^	HOOK_FUN(XX);$/;"	v
+XX	hook.cc	149;"	d	file:
+XX	hook.cc	152;"	d	file:
+XX	hook.cc	53;"	d	file:
+XX	hook.cc	55;"	d	file:
+XX	log.cc	218;"	d	file:
+XX	log.cc	231;"	d	file:
+XX	log.cc	369;"	d	file:
+XX	log.cc	382;"	d	file:
+YieldToHold	fiber.cc	/^void Fiber::YieldToHold(){$/;"	f	class:sylar::Fiber
+YieldToReady	fiber.cc	/^void Fiber::YieldToReady(){$/;"	f	class:sylar::Fiber
+__SYALR_BYTEARRAY_H__	bytearray.h	2;"	d
+__SYARL_APPLICATION_H__	application.h	2;"	d
+__SYLAR_DAEMON_H__	daemon.h	2;"	d
+__SYLAR_ENDIAN_H__	endian.h	2;"	d
+__SYLAR_ENV_H__	env.h	2;"	d
+__SYLAR_FD_MANAGER_H__	fd_manager.h	2;"	d
+__SYLAR_FIBER_H__	fiber.h	2;"	d
+__SYLAR_HOOK_H__	hook.h	2;"	d
+__SYLAR_H__	sylar.h	2;"	d
+__SYLAR_IPADDR_H__	ipaddr.h	2;"	d
+__SYLAR_NONCOPYABLE_H__	noncopyable.h	2;"	d
+__SYLAR_SCHEDULER_H__	scheduler.h	2;"	d
+__SYLAR_SOCKET_H__	socket.h	2;"	d
+__SYLAR_SOCKSTREAM_H__	sockstream.h	2;"	d
+__SYLAR_STREaM_H__	stream.h	2;"	d
+__SYLAR_TCP_SERVER_H__	tcp_server.h	2;"	d
+__SYLAR_THREAD_H__	thread.h	2;"	d
+__SYLAR_TIMER_H__	timer.h	2;"	d
+__SYLAR_URI_H__	uri.h	2;"	d
+__SYLAR_UTIL_H__	util.h	2;"	d
+__SYLAR__CONFIG_H__	config.h	2;"	d
+__SYLAR__IOMANAGER_H__	iomanager.h	2;"	d
+__SYLAR__MACRO_H__	macro.h	2;"	d
+__SYLAR__SINGLETON_H__	singleton.h	2;"	d
+__SYLAY_LOG_H__	log.h	2;"	d
+accept	hook.cc	/^int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen){$/;"	f
+accept	socket.cc	/^Socket::ptr Socket::accept(){$/;"	f	class:sylar::Socket
+accept_fun	hook.h	/^typedef int (*accept_fun)(int sockfd, struct sockaddr *addr, socklen_t *addrlen);$/;"	t
+add	env.cc	/^void Env::add(const std::string& key,const std::string& val){$/;"	f	class:sylar::Env
+addAppender	log.cc	/^void Logger::addAppender(LogAppender::ptr appender)$/;"	f	class:sylar::Logger
+addCapacity	bytearray.cc	/^void ByteArray::addCapacity(size_t size){$/;"	f	class:sylar::ByteArray
+addCondtionTimer	timer.cc	/^Timer::ptr TimerManager::addCondtionTimer(uint64_t ms,std::function<void()> cb,std::weak_ptr<void> weak_cond,bool recurring){$/;"	f	class:sylar::TimerManager
+addEvent	iomanager.cc	/^int IOManager::addEvent(int fd,Event event,std::function<void()> cb){$/;"	f	class:sylar::IOManager
+addHelp	env.cc	/^void Env::addHelp(const std::string& key,const std::string& val){$/;"	f	class:sylar::Env
+addTimer	timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void()> cb,bool recurring ){$/;"	f	class:sylar::TimerManager
+addTimer	timer.cc	/^void TimerManager::addTimer(Timer::ptr& timer){$/;"	f	class:sylar::TimerManager
+appenders	log.cc	/^	std::vector<LogAppenderDefine> appenders;$/;"	m	struct:sylar::LogDefine	file:
+back	fiber.cc	/^void Fiber::back(){$/;"	f	class:sylar::Fiber
+bind	socket.cc	/^bool Socket::bind(const Address::ptr addr){$/;"	f	class:sylar::Socket
+bind	tcp_server.cc	/^bool TcpServer::bind(std::vector<sylar::Address::ptr>& addrs,std::vector<sylar::Address::ptr>& faildaddr){$/;"	f	class:sylar::TcpServer
+bind	tcp_server.cc	/^bool TcpServer::bind(sylar::Address::ptr addr){$/;"	f	class:sylar::TcpServer
+broadcastAddress	ipaddr.cc	/^IPAddress::ptr IPv4Address::broadcastAddress(uint32_t prefix_len){$/;"	f	class:sylar::IPv4Address
+broadcastAddress	ipaddr.cc	/^IPAddress::ptr IPv6Address::broadcastAddress(uint32_t prefix_len){$/;"	f	class:sylar::IPv6Address
+byteSwapOnBigEndian	endian.h	/^T byteSwapOnBigEndian(T t){$/;"	f	namespace:sylar
+byteSwapOnLittleEndian	endian.h	/^T byteSwapOnLittleEndian(T t){$/;"	f	namespace:sylar
+byteswap	endian.h	/^byteswap(T value){$/;"	f	namespace:sylar
+call	fiber.cc	/^void Fiber::call(){$/;"	f	class:sylar::Fiber
+cancelEvent	iomanager.cc	/^bool IOManager::cancelEvent(int fd,Event event){$/;"	f	class:sylar::IOManager
+cancelled	hook.cc	/^	int cancelled = 0;$/;"	m	struct:sylar::timer_info	file:
+cancle	timer.cc	/^bool Timer::cancle(){$/;"	f	class:sylar::Timer
+cancleAccept	socket.cc	/^bool Socket::cancleAccept(){$/;"	f	class:sylar::Socket
+cancleAll	iomanager.cc	/^bool IOManager::cancleAll(int fd){$/;"	f	class:sylar::IOManager
+cancleAll	socket.cc	/^bool Socket::cancleAll(){$/;"	f	class:sylar::Socket
+cancleRead	socket.cc	/^bool Socket::cancleRead(){$/;"	f	class:sylar::Socket
+cancleWrite	socket.cc	/^bool Socket::cancleWrite(){$/;"	f	class:sylar::Socket
+cb	iomanager.h	/^			std::function<void()> cb;$/;"	m	struct:sylar::IOManager::FdContext::EventContext
+cb	scheduler.h	/^		std::function<void()> cb;$/;"	m	struct:sylar::Scheduler::FiberAndThread
+clear	bytearray.cc	/^void ByteArray::clear(){$/;"	f	class:sylar::ByteArray
+close	fd_manager.cc	/^bool FdCtx::close(){$/;"	f	class:sylar::FdCtx
+close	hook.cc	/^int close(int fd){$/;"	f
+close	socket.cc	/^bool Socket::close(){$/;"	f	class:sylar::Socket
+close	sockstream.cc	/^int SockStream::close(){$/;"	f	class:sylar::SockStream
+close_fun	hook.h	/^typedef int (*close_fun)(int fd);$/;"	t
+connect	hook.cc	/^int connect(int sockfd, const struct sockaddr *addr,socklen_t addrlen){$/;"	f
+connect	socket.cc	/^bool Socket::connect(const Address::ptr addr,uint64_t timeout_ms){$/;"	f	class:sylar::Socket
+connect_fun	hook.h	/^typedef int (*connect_fun)(int sockfd, const struct sockaddr *addr,socklen_t addrlen);$/;"	t
+connect_with_timeout	hook.cc	/^int connect_with_timeout(int sockfd,const struct sockaddr* addr,socklen_t addrlen,uint64_t timeout = 5000){$/;"	f
+contextResize	iomanager.cc	/^void IOManager::contextResize(size_t size){$/;"	f	class:sylar::IOManager
+createAddress	uri.rl.cc	/^Address::ptr Uri::createAddress() const {$/;"	f	class:sylar::Uri
+debug	log.cc	/^void Logger::debug(LogEvent::ptr event)$/;"	f	class:sylar::Logger
+del	env.cc	/^void Env::del(const std::string& key){$/;"	f	class:sylar::Env
+del	fd_manager.cc	/^void FdManager::del(int fd){$/;"	f	class:sylar::FdManager
+delAppender	log.cc	/^void Logger::delAppender(LogAppender::ptr appender)$/;"	f	class:sylar::Logger
+delEvent	iomanager.cc	/^bool IOManager::delEvent(int fd,Event event){$/;"	f	class:sylar::IOManager
+do_io	hook.cc	/^static ssize_t do_io(int fd,OriginFun fun,const char* hook_fun_name$/;"	f	namespace:sylar
+dump	socket.cc	/^std::ostream& Socket::dump(std::ostream& os){$/;"	f	class:sylar::Socket
+dump	uri.rl.cc	/^std::ostream& Uri::dump(std::ostream& os) const {$/;"	f	class:sylar::Uri
+error	log.cc	/^void Logger::error(LogEvent::ptr event)$/;"	f	class:sylar::Logger
+events	iomanager.h	/^		Event events = Event::NONE;$/;"	m	struct:sylar::IOManager::FdContext
+fatal	log.cc	/^void Logger::fatal(LogEvent::ptr event)$/;"	f	class:sylar::Logger
+fcntl	hook.cc	/^int fcntl(int fd, int cmd, ... \/* arg *\/ ){$/;"	f
+fcntl_fun	hook.h	/^typedef int (*fcntl_fun)(int fd, int cmd, ... \/* arg *\/ );$/;"	t
+fd	iomanager.h	/^		int fd = 0;$/;"	m	struct:sylar::IOManager::FdContext
+fiber	iomanager.h	/^			Fiber::ptr fiber;$/;"	m	struct:sylar::IOManager::FdContext::EventContext
+fiber	scheduler.h	/^		Fiber::ptr fiber;$/;"	m	struct:sylar::Scheduler::FiberAndThread
+file	log.cc	/^	std::string file;$/;"	m	struct:sylar::LogAppenderDefine	file:
+format	log.cc	/^std::string  LogFormatter::format(std::shared_ptr<Logger> ptr,LogLevel::Level level,LogEvent::ptr event)$/;"	f	class:sylar::LogFormatter
+formatter	log.cc	/^	std::string formatter;$/;"	m	struct:sylar::LogAppenderDefine	file:
+formatter	log.cc	/^	std::string formatter;$/;"	m	struct:sylar::LogDefine	file:
+g_logger	config.h	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar
+g_logger	daemon.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	env.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	fiber.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	hook.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	iomanager.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	scheduler.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	socket.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	tcp_server.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	thread.cc	/^static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_logger	util.cc	/^static Logger::ptr g_logger = SYLAR_LOG_NAME("system");$/;"	m	namespace:sylar	file:
+g_server_pid_file	Application.cc	/^static sylar::ConfigVar<std::string>::ptr g_server_pid_file = $/;"	m	namespace:sylar	file:
+g_server_work_path	Application.cc	/^static sylar::ConfigVar<std::string>::ptr g_server_work_path = $/;"	m	namespace:sylar	file:
+get	env.cc	/^std::string Env::get(const std::string& key,const std::string& val){$/;"	f	class:sylar::Env
+get	fd_manager.cc	/^FdCtx::ptr FdManager::get(int fd,bool auto_create){$/;"	f	class:sylar::FdManager
+getAbsolutePath	env.cc	/^std::string Env::getAbsolutePath(const std::string& path){$/;"	f	class:sylar::Env
+getAddr	ipaddr.cc	/^sockaddr* IPv4Address::getAddr()const{$/;"	f	class:sylar::IPv4Address
+getAddr	ipaddr.cc	/^sockaddr* IPv6Address::getAddr()const{$/;"	f	class:sylar::IPv6Address
+getAddr	ipaddr.cc	/^sockaddr* UnixAddress::getAddr()const{$/;"	f	class:sylar::UnixAddress
+getAddr	ipaddr.cc	/^sockaddr* UnknowAddress::getAddr()const{$/;"	f	class:sylar::UnknowAddress
+getAddrLen	ipaddr.cc	/^socklen_t IPv4Address::getAddrLen() const {$/;"	f	class:sylar::IPv4Address
+getAddrLen	ipaddr.cc	/^socklen_t IPv6Address::getAddrLen() const{$/;"	f	class:sylar::IPv6Address
+getAddrLen	ipaddr.cc	/^socklen_t UnixAddress::getAddrLen() const{$/;"	f	class:sylar::UnixAddress
+getAddrLen	ipaddr.cc	/^socklen_t UnknowAddress::getAddrLen() const {$/;"	f	class:sylar::UnknowAddress
+getBaseSize	bytearray.h	/^	size_t getBaseSize()const {return m_baseSize;}$/;"	f	class:sylar::ByteArray
+getCapacity	bytearray.h	/^	size_t getCapacity()const {return m_capacity - m_position;}$/;"	f	class:sylar::ByteArray
+getContent	log.h	/^	std::string getContent() const {return m_ss.str();}$/;"	f	class:sylar::LogEvent
+getContext	iomanager.cc	/^IOManager::FdContext::EventContext&  IOManager::FdContext::getContext(IOManager::Event event){$/;"	f	class:sylar::IOManager::FdContext
+getDescription	config.h	/^	const std::string& getDescription()const {return m_description;}$/;"	f	class:sylar::ConfigVarBase
+getElapse	log.h	/^	uint32_t getElapse()const {return m_elapse;}$/;"	f	class:sylar::LogEvent
+getEnv	env.cc	/^const std::string Env::getEnv(const std::string& key,const std::string& default_val){$/;"	f	class:sylar::Env
+getError	log.h	/^	bool  getError()const {return m_error;}$/;"	f	class:sylar::LogEvent
+getError	socket.cc	/^int Socket::getError(){$/;"	f	class:sylar::Socket
+getEventCount	iomanager.h	/^	size_t  getEventCount()const {return m_pendingEventCount.load();}$/;"	f	class:sylar::IOManager
+getFamily	ipaddr.cc	/^int Address::getFamily()const {$/;"	f	class:sylar::Address
+getFamily	socket.h	/^	int getFamily() const {return m_family;};$/;"	f	class:sylar::Socket
+getFile	log.h	/^	const char* getFile() const {return m_file;}$/;"	f	class:sylar::LogEvent
+getFormatter	log.h	/^	LogFormatter::ptr getFormatter()const {return m_formatter;}$/;"	f	class:sylar::LogAppender
+getFragment	uri.h	/^	const std::string& getFragment()const{return m_fragment;}$/;"	f	class:sylar::Uri
+getFriberId	log.h	/^	uint32_t getFriberId() const {return m_fiberId;}$/;"	f	class:sylar::LogEvent
+getFuncSize	scheduler.h	/^	size_t getFuncSize(){$/;"	f	class:sylar::Scheduler
+getHost	uri.h	/^	const std::string& getHost()const{return m_host;}$/;"	f	class:sylar::Uri
+getId	fiber.h	/^	uint64_t getId() const {return m_id;}$/;"	f	class:sylar::Fiber
+getId	thread.h	/^	pid_t getId() const {return m_id;}$/;"	f	class:sylar::Thread
+getLevel	log.h	/^	LogLevel::Level  getLevel() const {return m_level;}$/;"	f	class:sylar::LogAppender
+getLevel	log.h	/^	LogLevel::Level getLevel(){return m_level;}$/;"	f	class:sylar::LogEvent
+getLevel	log.h	/^	LogLevel::Level getLevel(){return m_level;}$/;"	f	class:sylar::Logger
+getLine	log.h	/^	uint32_t getLine()const {return m_line;}$/;"	f	class:sylar::LogEvent
+getLocalAddress	socket.cc	/^Address::ptr Socket::getLocalAddress(){$/;"	f	class:sylar::Socket
+getLogger	log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string& name)$/;"	f	class:sylar::LoggerManager
+getLogger	log.h	/^	std::shared_ptr<Logger> getLogger()const {return m_logger;}$/;"	f	class:sylar::LogEvent
+getName	config.h	/^	const std::string& getName()const  {return m_name;}$/;"	f	class:sylar::ConfigVarBase
+getName	log.h	/^	std::string getName()const {return m_name;}$/;"	f	class:sylar::Logger
+getName	scheduler.h	/^	const std::string getName() const {return m_name;}$/;"	f	class:sylar::Scheduler
+getName	tcp_server.h	/^	std::string getName()const {return m_name;}$/;"	f	class:sylar::TcpServer
+getName	thread.h	/^	std::string getName() { return m_name;}$/;"	f	class:sylar::Thread
+getNextTimer	timer.cc	/^uint64_t TimerManager::getNextTimer(){$/;"	f	class:sylar::TimerManager
+getOption	socket.cc	/^bool Socket::getOption(int level,int option,void* result,size_t* len){$/;"	f	class:sylar::Socket
+getOption	socket.h	/^	bool getOption(int level,int option,T& result){$/;"	f	class:sylar::Socket
+getPath	uri.rl.cc	/^const std::string& Uri::getPath() const {$/;"	f	class:sylar::Uri
+getPort	ipaddr.cc	/^uint32_t IPv4Address::getPort()const{$/;"	f	class:sylar::IPv4Address
+getPort	ipaddr.cc	/^uint32_t IPv6Address::getPort()const{$/;"	f	class:sylar::IPv6Address
+getPort	uri.rl.cc	/^int32_t Uri::getPort() const {$/;"	f	class:sylar::Uri
+getPosition	bytearray.h	/^	size_t getPosition()const {return m_position;};$/;"	f	class:sylar::ByteArray
+getProtocol	socket.h	/^	int getProtocol() const {return m_protocol;};$/;"	f	class:sylar::Socket
+getQuery	uri.h	/^	const std::string& getQuery()const{return m_query;}$/;"	f	class:sylar::Uri
+getReadBuffers	bytearray.cc	/^uint64_t ByteArray::getReadBuffers(std::vector<iovec>& buffers,uint64_t len){$/;"	f	class:sylar::ByteArray
+getReadBuffers	bytearray.cc	/^uint64_t ByteArray::getReadBuffers(std::vector<iovec>& buffers,uint64_t len,uint64_t position){$/;"	f	class:sylar::ByteArray
+getReadSize	bytearray.h	/^	size_t getReadSize()const {return m_size - m_position;}$/;"	f	class:sylar::ByteArray
+getRecvTimeout	socket.cc	/^uint64_t Socket::getRecvTimeout(){$/;"	f	class:sylar::Socket
+getRecvTimeout	tcp_server.h	/^	uint64_t getRecvTimeout()const {return m_RecvTimeout;}$/;"	f	class:sylar::TcpServer
+getRemoteAddress	socket.cc	/^Address::ptr Socket::getRemoteAddress(){$/;"	f	class:sylar::Socket
+getRoot	log.h	/^	Logger::ptr getRoot()const {return m_root;}$/;"	f	class:sylar::LoggerManager
+getSS	log.h	/^	std::stringstream& getSS() {return m_event->getSS();}$/;"	f	class:sylar::LogEventWarp
+getSS	log.h	/^	std::stringstream& getSS() {return m_ss;}$/;"	f	class:sylar::LogEvent
+getScheme	uri.h	/^	const std::string& getScheme()const{return m_scheme;}$/;"	f	class:sylar::Uri
+getSendTimeout	socket.cc	/^uint64_t Socket::getSendTimeout(){$/;"	f	class:sylar::Socket
+getSize	bytearray.h	/^	uint64_t& getSize(){return m_size;}$/;"	f	class:sylar::ByteArray
+getSocket	socket.h	/^	int getSocket()const{return m_sock;};$/;"	f	class:sylar::Socket
+getSocket	sockstream.h	/^	Socket::ptr getSocket(){return m_sock;}$/;"	f	class:sylar::SockStream
+getState	fiber.h	/^	State getState()const {return m_state;}$/;"	f	class:sylar::Fiber
+getSysNonblock	fd_manager.h	/^	bool getSysNonblock(){return m_sysNonblock;}$/;"	f	class:sylar::FdCtx
+getThreadId	log.h	/^	uint32_t getThreadId()const {return m_threadId;}$/;"	f	class:sylar::LogEvent
+getTime	log.h	/^	uint64_t getTime() const {return m_time;}$/;"	f	class:sylar::LogEvent
+getTimeout	fd_manager.cc	/^uint64_t FdCtx::getTimeout(int type){$/;"	f	class:sylar::FdCtx
+getType	socket.h	/^	int getType()const {return m_type;};$/;"	f	class:sylar::Socket
+getUserNonblock	fd_manager.h	/^	bool getUserNonblock(){return m_UserNonblock;}$/;"	f	class:sylar::FdCtx
+getUserinfo	uri.h	/^	const std::string& getUserinfo()const{return m_userinfo;}$/;"	f	class:sylar::Uri
+getValue	config.h	/^	const T getValue() const {$/;"	f	class:sylar::ConfigVar
+getWriteBuffers	bytearray.cc	/^uint64_t ByteArray::getWriteBuffers(std::vector<iovec>& buffers,uint64_t len){$/;"	f	class:sylar::ByteArray
+getsockopt	hook.cc	/^int getsockopt(int sockfd, int level, int optname,void *optval, socklen_t *optlen){$/;"	f
+getsockopt_fun	hook.h	/^typedef int (*getsockopt_fun)(int sockfd, int level, int optname,void *optval, socklen_t *optlen);$/;"	t
+handleClient	tcp_server.cc	/^void TcpServer::handleClient(Socket::ptr sock){$/;"	f	class:sylar::TcpServer
+has	env.cc	/^bool Env::has(const std::string& key){$/;"	f	class:sylar::Env
+hasIdleThreads	scheduler.h	/^	bool hasIdleThreads(){return m_idlerThreadCount > 0;}$/;"	f	class:sylar::Scheduler
+hasTimer	timer.cc	/^bool TimerManager::hasTimer(){$/;"	f	class:sylar::TimerManager
+hook_init	hook.cc	/^void hook_init(){$/;"	f	namespace:sylar
+idle	iomanager.cc	/^void IOManager::idle() {$/;"	f	class:sylar::IOManager
+idle	scheduler.cc	/^void Scheduler::idle(){$/;"	f	class:sylar::Scheduler
+info	log.cc	/^void Logger::info(LogEvent::ptr event)$/;"	f	class:sylar::Logger
+init	Application.cc	/^bool Application::init(int argc, char **argv){$/;"	f	class:sylar::Application
+init	env.cc	/^bool Env::init(int argc,char** argv){$/;"	f	class:sylar::Env
+init	fd_manager.cc	/^bool FdCtx::init(){$/;"	f	class:sylar::FdCtx
+init	log.cc	/^void LogFormatter::init()$/;"	f	class:sylar::LogFormatter
+init	log.cc	/^void LoggerManager::init(){$/;"	f	class:sylar::LoggerManager
+init	socket.cc	/^bool Socket::init(int sock){$/;"	f	class:sylar::Socket
+initSock	socket.cc	/^void Socket::initSock(){$/;"	f	class:sylar::Socket
+insert	ipaddr.cc	/^std::ostream& IPv4Address::insert(std::ostream& os)const{$/;"	f	class:sylar::IPv4Address
+insert	ipaddr.cc	/^std::ostream& IPv6Address::insert(std::ostream& os)const{$/;"	f	class:sylar::IPv6Address
+insert	ipaddr.cc	/^std::ostream& UnixAddress::insert(std::ostream& os)const{$/;"	f	class:sylar::UnixAddress
+insert	ipaddr.cc	/^std::ostream& UnknowAddress::insert(std::ostream& os)const{$/;"	f	class:sylar::UnknowAddress
+ioctl	hook.cc	/^int ioctl(int fd, unsigned long request, ...){$/;"	f
+ioctl_fun	hook.h	/^typedef int (*ioctl_fun)(int fd, unsigned long request, ...);$/;"	t
+isClosed	fd_manager.h	/^	bool isClosed()const {return m_isClosed;}$/;"	f	class:sylar::FdCtx
+isConnected	socket.h	/^	bool isConnected()const {return m_isConnected;};$/;"	f	class:sylar::Socket
+isConnected	sockstream.cc	/^bool SockStream::isConnected(){$/;"	f	class:sylar::SockStream
+isDefaultPort	uri.rl.cc	/^bool Uri::isDefaultPort() const {$/;"	f	class:sylar::Uri
+isInit	fd_manager.h	/^	bool isInit()const {return m_isInit;}$/;"	f	class:sylar::FdCtx
+isLittleEndian	bytearray.cc	/^bool ByteArray::isLittleEndian()const {$/;"	f	class:sylar::ByteArray
+isSocket	fd_manager.h	/^	bool isSocket()const {return m_isSocket;}$/;"	f	class:sylar::FdCtx
+isStop	tcp_server.h	/^	bool isStop()const{return m_isStop;}$/;"	f	class:sylar::TcpServer
+isVaild	socket.cc	/^bool Socket::isVaild()const {$/;"	f	class:sylar::Socket
+is_hook_enable	hook.cc	/^bool is_hook_enable(){$/;"	f	namespace:sylar
+join	thread.cc	/^void Thread::join(){$/;"	f	class:sylar::Thread
+level	log.cc	/^	LogLevel::Level level = LogLevel::Level::UNKNOW;$/;"	m	struct:sylar::LogAppenderDefine	file:
+level	log.cc	/^	LogLevel::Level level = LogLevel::Level::UNKNOW;$/;"	m	struct:sylar::LogDefine	file:
+listExpiredCb	timer.cc	/^void TimerManager::listExpiredCb(std::vector<std::function<void()> >& cbs ){$/;"	f	class:sylar::TimerManager
+listen	socket.cc	/^bool Socket::listen(int backlog){$/;"	f	class:sylar::Socket
+lock	thread.h	/^	void lock(){$/;"	f	class:sylar::Mutex
+lock	thread.h	/^	void lock(){$/;"	f	class:sylar::Spinlock
+lock	thread.h	/^	void lock(){$/;"	f	struct:sylar::ReadScopeLockImpl
+lock	thread.h	/^	void lock(){$/;"	f	struct:sylar::ScopeLockImpl
+lock	thread.h	/^	void lock(){$/;"	f	struct:sylar::WriteScopeLockImpl
+log	log.cc	/^void FileLogAppender::log(std::shared_ptr<Logger> ptr,LogLevel::Level level, LogEvent::ptr event)$/;"	f	class:sylar::FileLogAppender
+log	log.cc	/^void Logger::log(LogLevel::Level level, LogEvent::ptr event)$/;"	f	class:sylar::Logger
+log	log.cc	/^void StdoutLogAppender::log(std::shared_ptr<Logger> ptr,LogLevel::Level level, LogEvent::ptr event)$/;"	f	class:sylar::StdoutLogAppender
+m_RecvTimeout	tcp_server.h	/^	uint64_t m_RecvTimeout;$/;"	m	class:sylar::TcpServer
+m_acceptworker	tcp_server.h	/^	IOManager* m_acceptworker;$/;"	m	class:sylar::TcpServer
+m_activeThreadCount	scheduler.h	/^	size_t m_activeThreadCount = 0;$/;"	m	class:sylar::Scheduler
+m_addr	ipaddr.h	/^	 sockaddr m_addr;$/;"	m	class:sylar::UnknowAddress
+m_addr	ipaddr.h	/^	 sockaddr_in m_addr;$/;"	m	class:sylar::IPv4Address
+m_addr	ipaddr.h	/^	sockaddr_in6 m_addr;$/;"	m	class:sylar::IPv6Address
+m_addr	ipaddr.h	/^	struct sockaddr_un m_addr;$/;"	m	class:sylar::UnixAddress	typeref:struct:sylar::UnixAddress::sockaddr_un
+m_appenders	log.h	/^	std::list<LogAppender::ptr> m_appenders;$/;"	m	class:sylar::Logger
+m_argc	application.h	/^	int m_argc;$/;"	m	class:sylar::Application
+m_args	env.h	/^	std::map<std::string, std::string> m_args;$/;"	m	class:sylar::Env
+m_argv	application.h	/^	char** m_argv;$/;"	m	class:sylar::Application
+m_autoStop	scheduler.h	/^	bool m_autoStop = false;$/;"	m	class:sylar::Scheduler
+m_baseSize	bytearray.h	/^	size_t m_baseSize;\/\/一个Node初始多大$/;"	m	class:sylar::ByteArray
+m_capacity	bytearray.h	/^	size_t m_capacity;\/\/当前的容量$/;"	m	class:sylar::ByteArray
+m_cb	fiber.h	/^	std::function<void()> m_cb;$/;"	m	class:sylar::Fiber
+m_cb	thread.h	/^	std::function<void()> m_cb;$/;"	m	class:sylar::Thread
+m_cb	timer.h	/^	std::function<void()> m_cb;$/;"	m	class:sylar::Timer
+m_ctx	fiber.h	/^	ucontext_t m_ctx;$/;"	m	class:sylar::Fiber
+m_cur	bytearray.h	/^	Node* m_cur;$/;"	m	class:sylar::ByteArray
+m_cwd	env.h	/^	std::string m_cwd;$/;"	m	class:sylar::Env
+m_datas	config.h	/^	static ConfigMap m_datas;$/;"	m	class:sylar::Config
+m_datas	config.h	/^Config::ConfigMap Config::m_datas;$/;"	m	class:sylar::Config
+m_datas	fd_manager.h	/^	std::vector<FdCtx::ptr> m_datas;$/;"	m	class:sylar::FdManager
+m_description	config.h	/^	std::string m_description;$/;"	m	class:sylar::ConfigVarBase
+m_elapse	log.h	/^	uint32_t m_elapse = 0;$/;"	m	class:sylar::LogEvent
+m_endian	bytearray.h	/^	int8_t m_endian;$/;"	m	class:sylar::ByteArray
+m_epfd	iomanager.h	/^	int m_epfd = 0;$/;"	m	class:sylar::IOManager
+m_error	log.h	/^	bool m_error = false;$/;"	m	class:sylar::LogEvent
+m_event	log.h	/^		LogEvent::ptr m_event;$/;"	m	class:sylar::LogEventWarp
+m_exe	env.h	/^	std::string m_exe;$/;"	m	class:sylar::Env
+m_family	socket.h	/^	int m_family;$/;"	m	class:sylar::Socket
+m_fd	fd_manager.h	/^	int m_fd;$/;"	m	class:sylar::FdCtx
+m_fdContexts	iomanager.h	/^	std::vector<FdContext*> m_fdContexts;$/;"	m	class:sylar::IOManager
+m_fiberId	log.h	/^	uint32_t m_fiberId = 0;$/;"	m	class:sylar::LogEvent
+m_fibers	scheduler.h	/^	std::list<FiberAndThread> m_fibers;$/;"	m	class:sylar::Scheduler
+m_file	log.h	/^	const char* m_file = nullptr;$/;"	m	class:sylar::LogEvent
+m_filename	log.h	/^	std::string m_filename;$/;"	m	class:sylar::FileLogAppender
+m_filestream	log.h	/^	std::ofstream m_filestream;$/;"	m	class:sylar::FileLogAppender
+m_format	log.cc	/^	std::string m_format;$/;"	m	class:sylar::DateTimeFormatItem	file:
+m_formatter	log.h	/^	LogFormatter::ptr m_formatter;$/;"	m	class:sylar::LogAppender
+m_formatter	log.h	/^	LogFormatter::ptr m_formatter;$/;"	m	class:sylar::Logger
+m_fragment	uri.h	/^	std::string m_fragment;$/;"	m	class:sylar::Uri
+m_helps	env.h	/^	std::vector<std::pair<std::string,std::string> > m_helps;$/;"	m	class:sylar::Env
+m_host	uri.h	/^	std::string m_host;$/;"	m	class:sylar::Uri
+m_id	fiber.h	/^	uint64_t m_id;$/;"	m	class:sylar::Fiber
+m_id	thread.h	/^	pid_t m_id;$/;"	m	class:sylar::Thread
+m_idlerThreadCount	scheduler.h	/^	size_t m_idlerThreadCount = 0;$/;"	m	class:sylar::Scheduler
+m_iomanager	fd_manager.h	/^	sylar::IOManager* m_iomanager;$/;"	m	class:sylar::FdCtx
+m_isConnected	socket.h	/^	bool m_isConnected;$/;"	m	class:sylar::Socket
+m_isStop	tcp_server.h	/^	bool m_isStop;$/;"	m	class:sylar::TcpServer
+m_items	log.h	/^	std::vector<FormatItem::ptr> m_items;$/;"	m	class:sylar::LogFormatter
+m_length	ipaddr.h	/^	socklen_t m_length;$/;"	m	class:sylar::UnixAddress
+m_level	log.h	/^	LogLevel::Level m_level;$/;"	m	class:sylar::LogAppender
+m_level	log.h	/^	LogLevel::Level m_level;$/;"	m	class:sylar::LogEvent
+m_level	log.h	/^	LogLevel::Level m_level;$/;"	m	class:sylar::Logger
+m_line	log.h	/^	uint32_t m_line = 0;$/;"	m	class:sylar::LogEvent
+m_localAddress	socket.h	/^	Address::ptr m_localAddress;$/;"	m	class:sylar::Socket
+m_locked	thread.h	/^	bool m_locked = false;$/;"	m	struct:sylar::ReadScopeLockImpl
+m_locked	thread.h	/^	bool m_locked = false;$/;"	m	struct:sylar::ScopeLockImpl
+m_locked	thread.h	/^	bool m_locked = false;$/;"	m	struct:sylar::WriteScopeLockImpl
+m_logger	log.h	/^	std::shared_ptr<Logger> m_logger;$/;"	m	class:sylar::LogEvent
+m_loggers	log.h	/^	std::map<std::string,Logger::ptr> m_loggers;$/;"	m	class:sylar::LoggerManager
+m_manager	timer.h	/^	TimerManager* m_manager = nullptr;$/;"	m	class:sylar::Timer
+m_ms	timer.h	/^	uint64_t m_ms = 0; \/\/执行周期$/;"	m	class:sylar::Timer
+m_mutex	env.h	/^	MutexType m_mutex;$/;"	m	class:sylar::Env
+m_mutex	fd_manager.h	/^	MutexType m_mutex;$/;"	m	class:sylar::FdManager
+m_mutex	iomanager.h	/^	RWMutex m_mutex;$/;"	m	class:sylar::IOManager
+m_mutex	scheduler.h	/^	MutexType m_mutex;$/;"	m	class:sylar::Scheduler
+m_mutex	thread.h	/^	T& m_mutex;$/;"	m	struct:sylar::ReadScopeLockImpl
+m_mutex	thread.h	/^	T& m_mutex;$/;"	m	struct:sylar::ScopeLockImpl
+m_mutex	thread.h	/^	T& m_mutex;$/;"	m	struct:sylar::WriteScopeLockImpl
+m_mutex	thread.h	/^	pthread_mutex_t m_mutex;$/;"	m	class:sylar::Mutex
+m_mutex	thread.h	/^	pthread_rwlock_t m_mutex;$/;"	m	class:sylar::RWMutex
+m_mutex	thread.h	/^	pthread_spinlock_t m_mutex;$/;"	m	class:sylar::Spinlock
+m_mutex	timer.h	/^	MutexType m_mutex;$/;"	m	class:sylar::TimerManager
+m_name	config.h	/^	std::string m_name;$/;"	m	class:sylar::ConfigVarBase
+m_name	log.h	/^	std::string m_name;$/;"	m	class:sylar::Logger
+m_name	scheduler.h	/^	std::string m_name;$/;"	m	class:sylar::Scheduler
+m_name	tcp_server.h	/^	std::string m_name;$/;"	m	class:sylar::TcpServer
+m_name	thread.h	/^	std::string m_name;$/;"	m	class:sylar::Thread
+m_next	timer.h	/^	uint64_t m_next = 0;\/\/精确的执行时间$/;"	m	class:sylar::Timer
+m_own	sockstream.h	/^	bool m_own;$/;"	m	class:sylar::SockStream
+m_path	uri.h	/^	std::string m_path;$/;"	m	class:sylar::Uri
+m_pattern	log.h	/^	std::string m_pattern;$/;"	m	class:sylar::LogFormatter
+m_pendingEventCount	iomanager.h	/^	std::atomic<size_t> m_pendingEventCount = {0};$/;"	m	class:sylar::IOManager
+m_port	uri.h	/^	int32_t m_port;$/;"	m	class:sylar::Uri
+m_position	bytearray.h	/^	size_t m_position;\/\/当前操作的位置$/;"	m	class:sylar::ByteArray
+m_program	env.h	/^	std::string m_program;$/;"	m	class:sylar::Env
+m_protocol	socket.h	/^	int m_protocol;$/;"	m	class:sylar::Socket
+m_query	uri.h	/^	std::string m_query;$/;"	m	class:sylar::Uri
+m_recurring	timer.h	/^	bool m_recurring = false;$/;"	m	class:sylar::Timer
+m_recvTimeout	fd_manager.h	/^	uint64_t m_recvTimeout;$/;"	m	class:sylar::FdCtx
+m_remoteAddress	socket.h	/^	Address::ptr m_remoteAddress;$/;"	m	class:sylar::Socket
+m_root	bytearray.h	/^	Node* m_root;$/;"	m	class:sylar::ByteArray
+m_root	log.h	/^	Logger::ptr m_root;$/;"	m	class:sylar::Logger
+m_root	log.h	/^	Logger::ptr m_root;$/;"	m	class:sylar::LoggerManager
+m_rootFiber	scheduler.h	/^	Fiber::ptr m_rootFiber;$/;"	m	class:sylar::Scheduler
+m_rootThread	scheduler.h	/^	int m_rootThread = 0;$/;"	m	class:sylar::Scheduler
+m_scheme	uri.h	/^	std::string m_scheme;$/;"	m	class:sylar::Uri
+m_semaphore	thread.h	/^	Semaphore m_semaphore;$/;"	m	class:sylar::Thread
+m_semaphore	thread.h	/^	sem_t m_semaphore;$/;"	m	class:sylar::Semaphore
+m_sendTimeout	fd_manager.h	/^	uint64_t m_sendTimeout;$/;"	m	class:sylar::FdCtx
+m_size	bytearray.h	/^	size_t m_size;\/\/当前的大小$/;"	m	class:sylar::ByteArray
+m_sock	socket.h	/^	int m_sock;$/;"	m	class:sylar::Socket
+m_sock	sockstream.h	/^	Socket::ptr m_sock;$/;"	m	class:sylar::SockStream
+m_socks	tcp_server.h	/^	std::vector<Socket::ptr> m_socks;$/;"	m	class:sylar::TcpServer
+m_ss	log.h	/^	std::stringstream m_ss;$/;"	m	class:sylar::LogEvent
+m_stack	fiber.h	/^	void* m_stack = nullptr;$/;"	m	class:sylar::Fiber
+m_stacksize	fiber.h	/^	uint32_t m_stacksize;$/;"	m	class:sylar::Fiber
+m_state	fiber.h	/^	State m_state = INIT;$/;"	m	class:sylar::Fiber
+m_stopping	scheduler.h	/^	bool m_stopping = true;$/;"	m	class:sylar::Scheduler
+m_string	log.cc	/^	std::string m_string;$/;"	m	class:sylar::StringFormatItem	file:
+m_thread	thread.h	/^	pthread_t m_thread = 0;$/;"	m	class:sylar::Thread
+m_threadCount	scheduler.h	/^	size_t m_threadCount = 0;$/;"	m	class:sylar::Scheduler
+m_threadId	log.h	/^	uint32_t m_threadId = 0;$/;"	m	class:sylar::LogEvent
+m_threadIds	scheduler.h	/^	std::vector<int> m_threadIds;$/;"	m	class:sylar::Scheduler
+m_threads	scheduler.h	/^	std::vector<Thread::ptr> m_threads;$/;"	m	class:sylar::Scheduler
+m_tikleFds	iomanager.h	/^	int m_tikleFds[2];$/;"	m	class:sylar::IOManager
+m_time	log.h	/^	uint64_t m_time = 0;$/;"	m	class:sylar::LogEvent
+m_timers	timer.h	/^	std::set<Timer::ptr,Timer::Comparator> m_timers;$/;"	m	class:sylar::TimerManager
+m_type	socket.h	/^	int m_type;$/;"	m	class:sylar::Socket
+m_userinfo	uri.h	/^	std::string m_userinfo;$/;"	m	class:sylar::Uri
+m_val	config.h	/^	T m_val;$/;"	m	class:sylar::ConfigVar
+m_worker	tcp_server.h	/^	IOManager* m_worker;$/;"	m	class:sylar::TcpServer
+main	Application.cc	/^int Application::main(int argc, char **argv){$/;"	f	class:sylar::Application
+main_id	daemon.h	/^	pid_t main_id;$/;"	m	struct:sylar::ProcessInfo
+main_start_time	daemon.h	/^	uint64_t main_start_time = 0;$/;"	m	struct:sylar::ProcessInfo
+mutex	iomanager.h	/^		Mutex mutex;$/;"	m	struct:sylar::IOManager::FdContext
+name	log.cc	/^	std::string name;$/;"	m	struct:sylar::LogDefine	file:
+nanosleep	hook.cc	/^int nanosleep(const struct timespec *req, struct timespec *rem){$/;"	f
+nanosleep_fun	hook.h	/^typedef int (*nanosleep_fun)(const struct timespec *req, struct timespec *rem);$/;"	t
+networkAddress	ipaddr.cc	/^IPAddress::ptr IPv4Address::networkAddress(uint32_t prefix_len){$/;"	f	class:sylar::IPv4Address
+networkAddress	ipaddr.cc	/^IPAddress::ptr IPv6Address::networkAddress(uint32_t prefix_len){$/;"	f	class:sylar::IPv6Address
+newSock	socket.cc	/^void Socket::newSock(){$/;"	f	class:sylar::Socket
+next	bytearray.h	/^		Node* next;$/;"	m	struct:sylar::ByteArray::Node
+notify	thread.cc	/^void Semaphore::notify(){$/;"	f	class:sylar::Semaphore
+onTimerInsertedAtFront	iomanager.cc	/^void IOManager::onTimerInsertedAtFront(){$/;"	f	class:sylar::IOManager
+operator !=	ipaddr.cc	/^bool Address::operator!=(const Address& rhs)const{$/;"	f	class:sylar::Address
+operator ()	config.h	/^	T operator()(const F& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::list<T> operator()(const std::string& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::map<std::string, T> operator()(const std::string& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::set<T> operator()(const std::string& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::string operator()(const std::list<T>& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::string operator()(const std::map<std::string,T>& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::string operator()(const std::set<T>& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::string operator()(const std::unordered_map<std::string,T>& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::string operator()(const std::unordered_set<T>& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::string operator()(const std::vector<T>& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::unordered_map<std::string, T> operator()(const std::string& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::unordered_set<T> operator()(const std::string& v){$/;"	f	class:sylar::LexicalCast
+operator ()	config.h	/^	std::vector<T> operator()(const std::string& v){$/;"	f	class:sylar::LexicalCast
+operator ()	timer.cc	/^bool Timer::Comparator::operator()(const Timer::ptr& lhs,const Timer::ptr& rhs){$/;"	f	class:sylar::Timer::Comparator
+operator <	ipaddr.cc	/^bool Address::operator<(const Address& lhs) const { $/;"	f	class:sylar::Address
+operator <	log.cc	/^	bool operator<(const LogDefine& oth){$/;"	f	struct:sylar::LogDefine
+operator ==	ipaddr.cc	/^bool Address::operator==(const Address& rhs) const{$/;"	f	class:sylar::Address
+operator ==	log.cc	/^	bool operator==(const LogAppenderDefine& oth) const{$/;"	f	struct:sylar::LogAppenderDefine
+operator ==	log.cc	/^	bool operator==(const LogDefine& oth){$/;"	f	struct:sylar::LogDefine
+override	iomanager.h	/^	bool stopping() override;$/;"	m	class:sylar::IOManager
+override	iomanager.h	/^	void idle() override;$/;"	m	class:sylar::IOManager
+override	iomanager.h	/^	void onTimerInsertedAtFront() override;$/;"	m	class:sylar::IOManager
+override	iomanager.h	/^	void tickle() override;$/;"	m	class:sylar::IOManager
+override	ipaddr.h	/^	 IPAddress::ptr broadcastAddress(uint32_t prefix_len) override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 IPAddress::ptr broadcastAddress(uint32_t prefix_len) override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 IPAddress::ptr networkAddress(uint32_t prefix_len) override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 IPAddress::ptr networkAddress(uint32_t prefix_len) override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 IPAddress::ptr subnetMask(uint32_t prefix_len) override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 IPAddress::ptr subnetMask(uint32_t prefix_len) override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 sockaddr* getAddr()const override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 sockaddr* getAddr()const override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 sockaddr* getAddr()const override;$/;"	m	class:sylar::UnixAddress
+override	ipaddr.h	/^	 socklen_t getAddrLen() const override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 socklen_t getAddrLen() const override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 socklen_t getAddrLen() const override;$/;"	m	class:sylar::UnixAddress
+override	ipaddr.h	/^	 std::ostream& insert(std::ostream& os)const override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 std::ostream& insert(std::ostream& os)const override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 std::ostream& insert(std::ostream& os)const override;$/;"	m	class:sylar::UnixAddress
+override	ipaddr.h	/^	 uint32_t getPort()const  override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 uint32_t getPort()const  override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	 void setPort(uint16_t v) override;$/;"	m	class:sylar::IPv4Address
+override	ipaddr.h	/^	 void setPort(uint16_t v) override;$/;"	m	class:sylar::IPv6Address
+override	ipaddr.h	/^	sockaddr* getAddr()const override;$/;"	m	class:sylar::UnknowAddress
+override	ipaddr.h	/^	socklen_t getAddrLen() const override;$/;"	m	class:sylar::UnknowAddress
+override	ipaddr.h	/^	std::ostream& insert(std::ostream& os)const override;$/;"	m	class:sylar::UnknowAddress
+override	log.h	/^	void log(std::shared_ptr<Logger> ptr,LogLevel::Level level, LogEvent::ptr event) override;$/;"	m	class:sylar::FileLogAppender
+override	log.h	/^	void log(std::shared_ptr<Logger> ptr,LogLevel::Level,LogEvent::ptr event) override;$/;"	m	class:sylar::StdoutLogAppender
+override	sockstream.h	/^	int close() override;$/;"	m	class:sylar::SockStream
+override	sockstream.h	/^	int read(ByteArray::ptr ba,size_t length) override;$/;"	m	class:sylar::SockStream
+override	sockstream.h	/^	int read(void* buffer,size_t length) override;$/;"	m	class:sylar::SockStream
+override	sockstream.h	/^	int write(ByteArray::ptr ba,size_t length) override;$/;"	m	class:sylar::SockStream
+override	sockstream.h	/^	int write(const void* buffer,size_t length) override;$/;"	m	class:sylar::SockStream
+parent_id	daemon.h	/^	pid_t parent_id;$/;"	m	struct:sylar::ProcessInfo
+parent_start_time	daemon.h	/^	uint64_t parent_start_time = 0;$/;"	m	struct:sylar::ProcessInfo
+printHlep	env.cc	/^void Env::printHlep(){$/;"	f	class:sylar::Env
+ptr	application.h	/^	typedef std::shared_ptr<Application> ptr;$/;"	t	class:sylar::Application
+ptr	bytearray.h	/^		char* ptr;$/;"	m	struct:sylar::ByteArray::Node
+ptr	bytearray.h	/^	typedef std::shared_ptr<ByteArray> ptr;$/;"	t	class:sylar::ByteArray
+ptr	config.h	/^	typedef std::shared_ptr<Config> ptr;$/;"	t	class:sylar::Config
+ptr	config.h	/^	typedef std::shared_ptr<ConfigVar> ptr;$/;"	t	class:sylar::ConfigVar
+ptr	config.h	/^	typedef std::shared_ptr<ConfigVarBase> ptr;$/;"	t	class:sylar::ConfigVarBase
+ptr	fd_manager.h	/^	typedef std::shared_ptr<FdCtx> ptr;$/;"	t	class:sylar::FdCtx
+ptr	fd_manager.h	/^	typedef std::shared_ptr<FdManager> ptr;$/;"	t	class:sylar::FdManager
+ptr	fiber.h	/^	typedef std::shared_ptr<Fiber> ptr;$/;"	t	class:sylar::Fiber
+ptr	iomanager.h	/^	typedef std::shared_ptr<IOManager> ptr;$/;"	t	class:sylar::IOManager
+ptr	ipaddr.h	/^	 typedef std::shared_ptr<IPv4Address> ptr;$/;"	t	class:sylar::IPv4Address
+ptr	ipaddr.h	/^	 typedef std::shared_ptr<IPv6Address> ptr;$/;"	t	class:sylar::IPv6Address
+ptr	ipaddr.h	/^	typedef std::shared_ptr<Address> ptr;$/;"	t	class:sylar::Address
+ptr	ipaddr.h	/^	typedef std::shared_ptr<IPAddress> ptr;$/;"	t	class:sylar::IPAddress
+ptr	ipaddr.h	/^	typedef std::shared_ptr<UnixAddress> ptr;$/;"	t	class:sylar::UnixAddress
+ptr	ipaddr.h	/^	typedef std::shared_ptr<UnknowAddress> ptr;$/;"	t	class:sylar::UnknowAddress
+ptr	log.h	/^		typedef  std::shared_ptr<FormatItem> ptr;$/;"	t	class:sylar::LogFormatter::FormatItem
+ptr	log.h	/^	typedef std::shared_ptr<FileLogAppender> ptr;$/;"	t	class:sylar::FileLogAppender
+ptr	log.h	/^	typedef std::shared_ptr<LogAppender> ptr;$/;"	t	class:sylar::LogAppender
+ptr	log.h	/^	typedef std::shared_ptr<LogEvent> ptr;$/;"	t	class:sylar::LogEvent
+ptr	log.h	/^	typedef std::shared_ptr<LogFormatter> ptr;$/;"	t	class:sylar::LogFormatter
+ptr	log.h	/^	typedef std::shared_ptr<Logger> ptr;$/;"	t	class:sylar::Logger
+ptr	log.h	/^	typedef std::shared_ptr<StdoutLogAppender> ptr;$/;"	t	class:sylar::StdoutLogAppender
+ptr	scheduler.h	/^	typedef std::shared_ptr<Scheduler> ptr;$/;"	t	class:sylar::Scheduler
+ptr	socket.h	/^	typedef std::shared_ptr<Socket> ptr;$/;"	t	class:sylar::Socket
+ptr	sockstream.h	/^	typedef std::shared_ptr<SockStream> ptr;$/;"	t	class:sylar::SockStream
+ptr	tcp_server.h	/^	typedef std::shared_ptr<TcpServer> ptr;$/;"	t	class:sylar::TcpServer
+ptr	thread.h	/^	typedef std::shared_ptr<Mutex> ptr;$/;"	t	class:sylar::Mutex
+ptr	thread.h	/^	typedef std::shared_ptr<RWMutex> ptr;$/;"	t	class:sylar::RWMutex
+ptr	thread.h	/^	typedef std::shared_ptr<Semaphore> ptr;$/;"	t	class:sylar::Semaphore
+ptr	thread.h	/^	typedef std::shared_ptr<Thread> ptr;$/;"	t	class:sylar::Thread
+ptr	timer.h	/^	typedef std::shared_ptr<Timer> ptr;$/;"	t	class:sylar::Timer
+ptr	uri.h	/^	typedef std::shared_ptr<Uri> ptr;$/;"	t	class:sylar::Uri
+rdlock	thread.h	/^	void rdlock(){$/;"	f	class:sylar::RWMutex
+read	bytearray.cc	/^void ByteArray::read(void* buf,size_t size){$/;"	f	class:sylar::ByteArray
+read	bytearray.cc	/^void ByteArray::read(void* buf,size_t size,size_t position){$/;"	f	class:sylar::ByteArray
+read	hook.cc	/^ssize_t read(int fd, void *buf, size_t count){$/;"	f
+read	iomanager.h	/^		EventContext read;$/;"	m	struct:sylar::IOManager::FdContext
+read	sockstream.cc	/^int SockStream::read(ByteArray::ptr ba,size_t length){$/;"	f	class:sylar::SockStream
+read	sockstream.cc	/^int SockStream::read(void* buffer,size_t length){$/;"	f	class:sylar::SockStream
+readDouble	bytearray.cc	/^double   ByteArray::readDouble(){$/;"	f	class:sylar::ByteArray
+readFint16	bytearray.cc	/^int16_t  ByteArray::readFint16(){$/;"	f	class:sylar::ByteArray
+readFint32	bytearray.cc	/^int32_t  ByteArray::readFint32(){$/;"	f	class:sylar::ByteArray
+readFint64	bytearray.cc	/^int64_t  ByteArray::readFint64(){$/;"	f	class:sylar::ByteArray
+readFint8	bytearray.cc	/^int8_t   ByteArray::readFint8(){$/;"	f	class:sylar::ByteArray
+readFix	stream.cc	/^int Stream::readFix(ByteArray::ptr ba,size_t length){$/;"	f	class:sylar::Stream
+readFix	stream.cc	/^int Stream::readFix(void* buffer,size_t length){$/;"	f	class:sylar::Stream
+readFloat	bytearray.cc	/^float   ByteArray::readFloat(){$/;"	f	class:sylar::ByteArray
+readFromFile	bytearray.cc	/^void ByteArray::readFromFile(std::string& name){$/;"	f	class:sylar::ByteArray
+readFuint16	bytearray.cc	/^uint16_t ByteArray::readFuint16(){$/;"	f	class:sylar::ByteArray
+readFuint32	bytearray.cc	/^uint32_t ByteArray::readFuint32(){$/;"	f	class:sylar::ByteArray
+readFuint64	bytearray.cc	/^uint64_t ByteArray::readFuint64(){$/;"	f	class:sylar::ByteArray
+readFuint8	bytearray.cc	/^uint8_t  ByteArray::readFuint8(){$/;"	f	class:sylar::ByteArray
+readInt32	bytearray.cc	/^int32_t  ByteArray::readInt32(){$/;"	f	class:sylar::ByteArray
+readInt64	bytearray.cc	/^int64_t  ByteArray::readInt64(){$/;"	f	class:sylar::ByteArray
+readStringF16	bytearray.cc	/^std::string ByteArray::readStringF16(){$/;"	f	class:sylar::ByteArray
+readStringF32	bytearray.cc	/^std::string ByteArray::readStringF32(){$/;"	f	class:sylar::ByteArray
+readStringF64	bytearray.cc	/^std::string ByteArray::readStringF64(){$/;"	f	class:sylar::ByteArray
+readStringVint	bytearray.cc	/^std::string ByteArray::readStringVint(){$/;"	f	class:sylar::ByteArray
+readUint32	bytearray.cc	/^uint32_t ByteArray::readUint32(){$/;"	f	class:sylar::ByteArray
+readUint64	bytearray.cc	/^int64_t  ByteArray::readUint64(){$/;"	f	class:sylar::ByteArray
+read_fun	hook.h	/^typedef ssize_t (*read_fun)(int fd, void *buf, size_t count);$/;"	t
+readv	hook.cc	/^ssize_t readv(int fd, const struct iovec *iov, int iovcnt){$/;"	f
+readv_fun	hook.h	/^typedef ssize_t (*readv_fun)(int fd, const struct iovec *iov, int iovcnt);$/;"	t
+real_daemon	daemon.cc	/^static int real_daemon(int argc,char** argv,std::function<int (int, char**)> main_cb){$/;"	f	namespace:sylar
+real_start	daemon.cc	/^static int real_start(int argc,char** argv,std::function<int (int, char**)> main_cb){$/;"	f	namespace:sylar
+recv	hook.cc	/^ssize_t recv(int sockfd, void *buf, size_t len, int flags){$/;"	f
+recv	socket.cc	/^int Socket::recv(iovec* buffers,size_t length,int flag){$/;"	f	class:sylar::Socket
+recv	socket.cc	/^int Socket::recv(void* buffer,size_t length,int flag){$/;"	f	class:sylar::Socket
+recvFrom	socket.cc	/^int Socket::recvFrom(iovec* buffers,size_t length,Address::ptr from,int flag){$/;"	f	class:sylar::Socket
+recvFrom	socket.cc	/^int Socket::recvFrom(void* buffer,size_t length,Address::ptr from,int flag){$/;"	f	class:sylar::Socket
+recv_fun	hook.h	/^typedef ssize_t (*recv_fun)(int sockfd, void *buf, size_t len, int flags);$/;"	t
+recvfrom	hook.cc	/^ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,struct sockaddr *src_addr, socklen_t *addrlen){$/;"	f
+recvfrom_fun	hook.h	/^typedef ssize_t (*recvfrom_fun)(int sockfd, void *buf, size_t len, int flags,struct sockaddr *src_addr, socklen_t *addrlen);$/;"	t
+recvmsg	hook.cc	/^ssize_t recvmsg(int sockfd, struct msghdr *msg, int flags){$/;"	f
+recvmsg_fun	hook.h	/^typedef ssize_t (*recvmsg_fun)(int sockfd, struct msghdr *msg, int flags);$/;"	t
+refresh	timer.cc	/^bool Timer::refresh(){$/;"	f	class:sylar::Timer
+removeHelp	env.cc	/^bool Env::removeHelp(const std::string& key){$/;"	f	class:sylar::Env
+reopen	log.cc	/^bool FileLogAppender::reopen()$/;"	f	class:sylar::FileLogAppender
+reset	fiber.cc	/^void Fiber::reset(std::function<void()> cb){$/;"	f	class:sylar::Fiber
+reset	scheduler.h	/^		void reset(){$/;"	f	struct:sylar::Scheduler::FiberAndThread
+reset	timer.cc	/^bool Timer::reset(uint64_t ms,bool from_now){$/;"	f	class:sylar::Timer
+resetContext	iomanager.cc	/^void IOManager::FdContext::resetContext(FdContext::EventContext& ctx){$/;"	f	class:sylar::IOManager::FdContext
+restart_count	daemon.h	/^	uint32_t restart_count = 0;$/;"	m	struct:sylar::ProcessInfo
+run	Application.cc	/^bool Application::run(){$/;"	f	class:sylar::Application
+run	scheduler.cc	/^void Scheduler::run(){$/;"	f	class:sylar::Scheduler
+run	thread.cc	/^void* Thread::run(void *arg){$/;"	f	class:sylar::Thread
+s_Hook_init_	hook.cc	/^static HookIniter s_Hook_init_;$/;"	m	namespace:sylar	file:
+s_instance	Application.cc	/^Application* Application::s_instance = nullptr;	$/;"	m	class:sylar::Application	file:
+s_instance	application.h	/^	static Application* s_instance;$/;"	m	class:sylar::Application
+scheduler	iomanager.h	/^			Scheduler* scheduler = nullptr;$/;"	m	struct:sylar::IOManager::FdContext::EventContext
+scheduler	scheduler.h	/^	void scheduler(FiberOrCB fc ,int thr = -1){$/;"	f	class:sylar::Scheduler
+scheduler	scheduler.h	/^	void scheduler(InputIterator begin, InputIterator end){$/;"	f	class:sylar::Scheduler
+schedulerNoLock	scheduler.h	/^	bool schedulerNoLock(FiberOrCB fc,int thr = -1){$/;"	f	class:sylar::Scheduler
+send	hook.cc	/^ssize_t send(int sockfd, const void *buf, size_t len, int flags){$/;"	f
+send	socket.cc	/^int Socket::send(const iovec* buffers,size_t length,int flag ){$/;"	f	class:sylar::Socket
+send	socket.cc	/^int Socket::send(const void* buffer,size_t length,int flag ){$/;"	f	class:sylar::Socket
+sendTo	socket.cc	/^int Socket::sendTo(const iovec* buffers,size_t length,const Address::ptr to,int flag){$/;"	f	class:sylar::Socket
+sendTo	socket.cc	/^int Socket::sendTo(const void* buffer,size_t length,const Address::ptr to,int flag){$/;"	f	class:sylar::Socket
+send_fun	hook.h	/^typedef ssize_t (*send_fun)(int sockfd, const void *buf, size_t len, int flags);$/;"	t
+sendmsg	hook.cc	/^ssize_t sendmsg(int sockfd, const struct msghdr *msg, int flags){$/;"	f
+sendmsg_fun	hook.h	/^typedef ssize_t (*sendmsg_fun)(int sockfd, const struct msghdr *msg, int flags);$/;"	t
+sendto	hook.cc	/^ssize_t sendto(int sockfd, const void *buf, size_t len, int flags,const struct sockaddr *dest_addr, socklen_t addrlen){$/;"	f
+sendto_fun	hook.h	/^typedef ssize_t (*sendto_fun)(int sockfd, const void *buf, size_t len, int flags,const struct sockaddr *dest_addr, socklen_t addrlen);$/;"	t
+setAddrLen	ipaddr.h	/^	 void setAddrLen(socklen_t len){m_length = len;}$/;"	f	class:sylar::UnixAddress
+setEnv	env.cc	/^void Env::setEnv(const std::string& key,const std::string& val){$/;"	f	class:sylar::Env
+setFormatter	log.h	/^	void setFormatter(LogFormatter::ptr format){m_formatter = format;}$/;"	f	class:sylar::LogAppender
+setFragment	uri.h	/^	void setFragment(const std::string& fragment){m_fragment = fragment;}$/;"	f	class:sylar::Uri
+setHost	uri.h	/^	void setHost(const std::string& host){m_host = host;}$/;"	f	class:sylar::Uri
+setIsLittleEndian	bytearray.cc	/^void ByteArray::setIsLittleEndian(bool v){$/;"	f	class:sylar::ByteArray
+setLevel	log.h	/^	void setLevel(LogLevel::Level level) { m_level = level;}$/;"	f	class:sylar::LogAppender
+setLevel	log.h	/^	void setLevel(LogLevel::Level level) {m_level = level;}$/;"	f	class:sylar::Logger
+setName	tcp_server.h	/^	void setName(const std::string& name){m_name = name;}$/;"	f	class:sylar::TcpServer
+setOption	socket.cc	/^bool Socket::setOption(int level,int option ,const void* result,size_t len){$/;"	f	class:sylar::Socket
+setOption	socket.h	/^	bool setOption(int level,int option,const T& value){$/;"	f	class:sylar::Socket
+setPath	uri.h	/^	void setPath(const std::string& path){m_path = path;}$/;"	f	class:sylar::Uri
+setPort	ipaddr.cc	/^void IPv4Address::setPort(uint16_t v){$/;"	f	class:sylar::IPv4Address
+setPort	ipaddr.cc	/^void IPv6Address::setPort(uint16_t v){$/;"	f	class:sylar::IPv6Address
+setPort	uri.h	/^	void setPort(int32_t port){m_port = port;}$/;"	f	class:sylar::Uri
+setPosition	bytearray.cc	/^void ByteArray::setPosition(size_t v){$/;"	f	class:sylar::ByteArray
+setQuery	uri.h	/^	void setQuery(const std::string& query){m_query = query;}$/;"	f	class:sylar::Uri
+setRecvTimeout	tcp_server.h	/^	void setRecvTimeout(const uint64_t v){m_RecvTimeout = v;}$/;"	f	class:sylar::TcpServer
+setRecvTimerout	socket.cc	/^void Socket::setRecvTimerout(uint64_t v){$/;"	f	class:sylar::Socket
+setScheme	uri.h	/^	void setScheme(const std::string& scheme){m_scheme = scheme;}$/;"	f	class:sylar::Uri
+setSendTimerout	socket.cc	/^void Socket::setSendTimerout(uint64_t v){$/;"	f	class:sylar::Socket
+setState	fiber.h	/^	void setState(State s){m_state = s;}$/;"	f	class:sylar::Fiber
+setSysNonblock	fd_manager.h	/^	void setSysNonblock(bool v){m_sysNonblock = v;}$/;"	f	class:sylar::FdCtx
+setThis	scheduler.cc	/^void Scheduler::setThis(){$/;"	f	class:sylar::Scheduler
+setTimeout	fd_manager.cc	/^void FdCtx::setTimeout(int type ,uint64_t v){$/;"	f	class:sylar::FdCtx
+setUserNonblock	fd_manager.h	/^	void setUserNonblock(bool v){m_UserNonblock = v;}$/;"	f	class:sylar::FdCtx
+setUserinfo	uri.h	/^	void setUserinfo(const std::string& userinfo){m_userinfo = userinfo;}$/;"	f	class:sylar::Uri
+setValue	config.h	/^	void setValue(const T& val){$/;"	f	class:sylar::ConfigVar
+set_hook_enable	hook.cc	/^void set_hook_enable(bool flag){$/;"	f	namespace:sylar
+setsockopt	hook.cc	/^int setsockopt(int sockfd, int level, int optname,const void *optval, socklen_t optlen){$/;"	f
+setsockopt_fun	hook.h	/^typedef int (*setsockopt_fun)(int sockfd, int level, int optname,const void *optval, socklen_t optlen);$/;"	t
+size	bytearray.h	/^		size_t size;$/;"	m	struct:sylar::ByteArray::Node
+sleep	hook.cc	/^unsigned int sleep(unsigned int seconds){$/;"	f
+sleep_fun	hook.h	/^typedef unsigned int (*sleep_fun)(unsigned int seconds);$/;"	t
+socket	hook.cc	/^int socket(int domain, int type, int protocol){$/;"	f
+socket_fun	hook.h	/^typedef int (*socket_fun)(int domain, int type, int protocol);$/;"	t
+start	scheduler.cc	/^void Scheduler::start(){$/;"	f	class:sylar::Scheduler
+start	tcp_server.cc	/^bool TcpServer::start(){$/;"	f	class:sylar::TcpServer
+startAccept	tcp_server.cc	/^void TcpServer::startAccept(Socket::ptr sock){$/;"	f	class:sylar::TcpServer
+start_daemon	daemon.cc	/^int start_daemon(int argc,char** argv ,std::function<int (int, char**)> main_cb,bool is_daemo){$/;"	f	namespace:sylar
+stop	scheduler.cc	/^void Scheduler::stop(){$/;"	f	class:sylar::Scheduler
+stop	tcp_server.cc	/^bool TcpServer::stop(){$/;"	f	class:sylar::TcpServer
+stopping	iomanager.cc	/^bool IOManager::stopping() {$/;"	f	class:sylar::IOManager
+stopping	iomanager.cc	/^bool IOManager::stopping(uint64_t& timeout){$/;"	f	class:sylar::IOManager
+stopping	scheduler.cc	/^bool Scheduler::stopping(){$/;"	f	class:sylar::Scheduler
+subnetMask	ipaddr.cc	/^IPAddress::ptr IPv4Address::subnetMask(uint32_t prefix_len){$/;"	f	class:sylar::IPv4Address
+subnetMask	ipaddr.cc	/^IPAddress::ptr IPv6Address::subnetMask(uint32_t prefix_len){$/;"	f	class:sylar::IPv6Address
+swapIn	fiber.cc	/^void Fiber::swapIn(){$/;"	f	class:sylar::Fiber
+swapOut	fiber.cc	/^void Fiber::swapOut(){$/;"	f	class:sylar::Fiber
+sylar	Application.cc	/^namespace sylar{$/;"	n	file:
+sylar	application.h	/^namespace sylar{$/;"	n
+sylar	bytearray.cc	/^namespace sylar{$/;"	n	file:
+sylar	bytearray.h	/^namespace sylar{$/;"	n
+sylar	config.cc	/^namespace sylar{$/;"	n	file:
+sylar	config.h	/^namespace sylar{$/;"	n
+sylar	daemon.cc	/^namespace sylar{$/;"	n	file:
+sylar	daemon.h	/^namespace sylar{$/;"	n
+sylar	endian.h	/^namespace sylar{$/;"	n
+sylar	env.cc	/^namespace sylar{$/;"	n	file:
+sylar	env.h	/^namespace sylar{$/;"	n
+sylar	fd_manager.cc	/^namespace sylar{$/;"	n	file:
+sylar	fd_manager.h	/^namespace sylar{$/;"	n
+sylar	fiber.cc	/^namespace sylar{$/;"	n	file:
+sylar	fiber.h	/^namespace sylar{$/;"	n
+sylar	hook.cc	/^namespace sylar{	$/;"	n	file:
+sylar	hook.h	/^namespace sylar{$/;"	n
+sylar	iomanager.cc	/^namespace sylar{$/;"	n	file:
+sylar	iomanager.h	/^namespace sylar{$/;"	n
+sylar	ipaddr.cc	/^namespace sylar{$/;"	n	file:
+sylar	ipaddr.h	/^namespace sylar{$/;"	n
+sylar	log.cc	/^namespace sylar{$/;"	n	file:
+sylar	log.h	/^namespace sylar{$/;"	n
+sylar	noncopyable.h	/^namespace sylar{$/;"	n
+sylar	scheduler.cc	/^namespace sylar{$/;"	n	file:
+sylar	scheduler.h	/^namespace sylar{$/;"	n
+sylar	singleton.h	/^namespace sylar{$/;"	n
+sylar	socket.cc	/^namespace sylar{$/;"	n	file:
+sylar	socket.h	/^namespace sylar{$/;"	n
+sylar	sockstream.cc	/^namespace sylar{$/;"	n	file:
+sylar	sockstream.h	/^namespace sylar{$/;"	n
+sylar	stream.cc	/^namespace sylar{$/;"	n	file:
+sylar	stream.h	/^namespace sylar{$/;"	n
+sylar	tcp_server.cc	/^namespace sylar{$/;"	n	file:
+sylar	tcp_server.h	/^namespace sylar{$/;"	n
+sylar	thread.cc	/^namespace sylar{$/;"	n	file:
+sylar	thread.h	/^namespace sylar{$/;"	n
+sylar	timer.cc	/^namespace sylar{$/;"	n	file:
+sylar	timer.h	/^namespace sylar{$/;"	n
+sylar	uri.h	/^namespace sylar{$/;"	n
+sylar	uri.rl.cc	/^namespace sylar {$/;"	n	file:
+sylar	util.cc	/^namespace sylar{$/;"	n	file:
+sylar	util.h	/^namespace sylar{$/;"	n
+t_fiber	fiber.cc	/^static thread_local Fiber* t_fiber = nullptr;$/;"	m	namespace:sylar	file:
+t_hook_enable	hook.cc	/^static thread_local bool t_hook_enable = false;$/;"	m	namespace:sylar	file:
+t_scheduler	scheduler.cc	/^static thread_local Scheduler* t_scheduler = nullptr;$/;"	m	namespace:sylar	file:
+t_scheduler_fiber	scheduler.cc	/^static thread_local Fiber* t_scheduler_fiber = nullptr;$/;"	m	namespace:sylar	file:
+t_thread	thread.cc	/^static thread_local Thread* t_thread = nullptr;$/;"	m	namespace:sylar	file:
+t_threadFiber	fiber.cc	/^static thread_local std::shared_ptr<Fiber> t_threadFiber = nullptr;$/;"	m	namespace:sylar	file:
+thread	scheduler.h	/^		int thread;$/;"	m	struct:sylar::Scheduler::FiberAndThread
+tickle	iomanager.cc	/^void IOManager::tickle() {$/;"	f	class:sylar::IOManager
+tickle	scheduler.cc	/^void Scheduler::tickle(){$/;"	f	class:sylar::Scheduler
+timer_info	hook.cc	/^struct timer_info{$/;"	s	namespace:sylar	file:
+toHexString	bytearray.cc	/^std::string ByteArray::toHexString(){$/;"	f	class:sylar::ByteArray
+toString	bytearray.cc	/^std::string ByteArray::toString(){$/;"	f	class:sylar::ByteArray
+toString	daemon.cc	/^std::string ProcessInfo::toString()const{$/;"	f	class:sylar::ProcessInfo
+toString	ipaddr.cc	/^std::string Address::toString(){$/;"	f	class:sylar::Address
+toString	log.cc	/^const char* LogLevel::toString(LogLevel::Level level)$/;"	f	class:sylar::LogLevel
+toString	socket.cc	/^std::string Socket::toString(){$/;"	f	class:sylar::Socket
+toString	uri.rl.cc	/^std::string Uri::toString() const {$/;"	f	class:sylar::Uri
+triggerEvent	iomanager.cc	/^void IOManager::FdContext::triggerEvent(IOManager::Event event){$/;"	f	class:sylar::IOManager::FdContext
+type	log.cc	/^	int type = 1;$/;"	m	struct:sylar::LogAppenderDefine	file:
+unlock	thread.h	/^	void unlock(){$/;"	f	class:sylar::Mutex
+unlock	thread.h	/^	void unlock(){$/;"	f	class:sylar::RWMutex
+unlock	thread.h	/^	void unlock(){$/;"	f	class:sylar::Spinlock
+unlock	thread.h	/^	void unlock(){$/;"	f	struct:sylar::ReadScopeLockImpl
+unlock	thread.h	/^	void unlock(){$/;"	f	struct:sylar::ScopeLockImpl
+unlock	thread.h	/^	void unlock(){$/;"	f	struct:sylar::WriteScopeLockImpl
+uri_parser_en_main	uri.rl.cc	/^static const int uri_parser_en_main = 451;$/;"	m	namespace:sylar	file:
+uri_parser_error	uri.rl.cc	/^static const int uri_parser_error = 0;$/;"	m	namespace:sylar	file:
+uri_parser_first_final	uri.rl.cc	/^static const int uri_parser_first_final = 451;$/;"	m	namespace:sylar	file:
+uri_parser_start	uri.rl.cc	/^static const int uri_parser_start = 451;$/;"	m	namespace:sylar	file:
+usleep	hook.cc	/^int usleep(useconds_t usec){$/;"	f
+usleep_fun	hook.h	/^typedef int (*usleep_fun)(useconds_t usec);$/;"	t
+wait	thread.cc	/^void Semaphore::wait(){$/;"	f	class:sylar::Semaphore
+warn	log.cc	/^void Logger::warn(LogEvent::ptr event)$/;"	f	class:sylar::Logger
+weak_ptr	socket.h	/^	typedef std::weak_ptr<Socket> weak_ptr;$/;"	t	class:sylar::Socket
+write	bytearray.cc	/^void ByteArray::write(const void* buf,size_t size){$/;"	f	class:sylar::ByteArray
+write	hook.cc	/^ssize_t write(int fd, const void *buf, size_t count){$/;"	f
+write	iomanager.h	/^		EventContext write;$/;"	m	struct:sylar::IOManager::FdContext
+write	sockstream.cc	/^int SockStream::write(ByteArray::ptr ba,size_t length){$/;"	f	class:sylar::SockStream
+write	sockstream.cc	/^int SockStream::write(const void* buffer,size_t length){$/;"	f	class:sylar::SockStream
+writeDouble	bytearray.cc	/^void ByteArray::writeDouble(double value){$/;"	f	class:sylar::ByteArray
+writeFint16	bytearray.cc	/^void ByteArray::writeFint16(int16_t value){$/;"	f	class:sylar::ByteArray
+writeFint32	bytearray.cc	/^void ByteArray::writeFint32(int32_t value){$/;"	f	class:sylar::ByteArray
+writeFint64	bytearray.cc	/^void ByteArray::writeFint64(int64_t value){$/;"	f	class:sylar::ByteArray
+writeFint8	bytearray.cc	/^void ByteArray::writeFint8(int8_t value){$/;"	f	class:sylar::ByteArray
+writeFix	stream.cc	/^int Stream::writeFix(ByteArray::ptr ba,size_t length){$/;"	f	class:sylar::Stream
+writeFix	stream.cc	/^int Stream::writeFix(const void* buffer,size_t length){$/;"	f	class:sylar::Stream
+writeFloat	bytearray.cc	/^void ByteArray::writeFloat(float value){$/;"	f	class:sylar::ByteArray
+writeFuint16	bytearray.cc	/^void ByteArray::writeFuint16(uint16_t value){	$/;"	f	class:sylar::ByteArray
+writeFuint32	bytearray.cc	/^void ByteArray::writeFuint32(uint32_t value){$/;"	f	class:sylar::ByteArray
+writeFuint64	bytearray.cc	/^void ByteArray::writeFuint64(uint64_t value){$/;"	f	class:sylar::ByteArray
+writeFuint8	bytearray.cc	/^void ByteArray::writeFuint8(uint8_t value){$/;"	f	class:sylar::ByteArray
+writeInt32	bytearray.cc	/^void ByteArray::writeInt32(int32_t value){$/;"	f	class:sylar::ByteArray
+writeInt64	bytearray.cc	/^void ByteArray::writeInt64(int64_t value){$/;"	f	class:sylar::ByteArray
+writeStringF16	bytearray.cc	/^void ByteArray::writeStringF16(std::string& value){$/;"	f	class:sylar::ByteArray
+writeStringF32	bytearray.cc	/^void ByteArray::writeStringF32(std::string& value){$/;"	f	class:sylar::ByteArray
+writeStringF64	bytearray.cc	/^void ByteArray::writeStringF64(std::string& value){$/;"	f	class:sylar::ByteArray
+writeStringVint	bytearray.cc	/^void ByteArray::writeStringVint(std::string& value){$/;"	f	class:sylar::ByteArray
+writeStringWithoutLength	bytearray.cc	/^void ByteArray::writeStringWithoutLength(std::string& value){$/;"	f	class:sylar::ByteArray
+writeToFile	bytearray.cc	/^bool ByteArray::writeToFile(std::string& name)const{$/;"	f	class:sylar::ByteArray
+writeUint32	bytearray.cc	/^void ByteArray::writeUint32(uint32_t value){$/;"	f	class:sylar::ByteArray
+writeUint64	bytearray.cc	/^void ByteArray::writeUint64(uint64_t value){$/;"	f	class:sylar::ByteArray
+write_fun	hook.h	/^typedef ssize_t (*write_fun)(int fd, const void *buf, size_t count);$/;"	t
+writev	hook.cc	/^ssize_t writev(int fd, const struct iovec *iov, int iovcnt){$/;"	f
+writev_fun	hook.h	/^typedef ssize_t (*writev_fun)(int fd, const struct iovec *iov, int iovcnt);$/;"	t
+wrlock	thread.h	/^	void wrlock(){$/;"	f	class:sylar::RWMutex
+~Address	ipaddr.h	/^	virtual ~Address(){}$/;"	f	class:sylar::Address
+~ByteArray	bytearray.cc	/^ByteArray::~ByteArray(){$/;"	f	class:sylar::ByteArray
+~ConfigVarBase	config.h	/^	virtual ~ConfigVarBase(){}$/;"	f	class:sylar::ConfigVarBase
+~FdCtx	fd_manager.cc	/^FdCtx::~FdCtx(){$/;"	f	class:sylar::FdCtx
+~Fiber	fiber.cc	/^Fiber::~Fiber(){$/;"	f	class:sylar::Fiber
+~FormatItem	log.h	/^		virtual ~FormatItem(){}$/;"	f	class:sylar::LogFormatter::FormatItem
+~IOManager	iomanager.cc	/^IOManager::~IOManager(){$/;"	f	class:sylar::IOManager
+~LogAppender	log.h	/^	virtual ~LogAppender(){} $/;"	f	class:sylar::LogAppender
+~LogEventWarp	log.cc	/^LogEventWarp::~LogEventWarp(){$/;"	f	class:sylar::LogEventWarp
+~Mutex	thread.h	/^	~Mutex(){$/;"	f	class:sylar::Mutex
+~Node	bytearray.cc	/^ByteArray::Node::~Node(){$/;"	f	class:sylar::ByteArray::Node
+~RWMutex	thread.h	/^	~RWMutex(){$/;"	f	class:sylar::RWMutex
+~ReadScopeLockImpl	thread.h	/^	~ReadScopeLockImpl(){$/;"	f	struct:sylar::ReadScopeLockImpl
+~Scheduler	scheduler.cc	/^Scheduler::~Scheduler(){$/;"	f	class:sylar::Scheduler
+~ScopeLockImpl	thread.h	/^	~ScopeLockImpl(){$/;"	f	struct:sylar::ScopeLockImpl
+~Semaphore	thread.cc	/^Semaphore::~Semaphore(){$/;"	f	class:sylar::Semaphore
+~SockStream	sockstream.cc	/^SockStream::~SockStream(){$/;"	f	class:sylar::SockStream
+~Socket	socket.cc	/^Socket::~Socket(){$/;"	f	class:sylar::Socket
+~Spinlock	thread.h	/^	~Spinlock(){$/;"	f	class:sylar::Spinlock
+~Stream	stream.h	/^	virtual ~Stream(){}$/;"	f	class:sylar::Stream
+~TcpServer	tcp_server.cc	/^TcpServer::~TcpServer(){$/;"	f	class:sylar::TcpServer
+~Thread	thread.cc	/^Thread:: ~Thread(){$/;"	f	class:sylar::Thread
+~TimerManager	timer.cc	/^TimerManager::~TimerManager(){$/;"	f	class:sylar::TimerManager
+~WriteScopeLockImpl	thread.h	/^	~WriteScopeLockImpl(){$/;"	f	struct:sylar::WriteScopeLockImpl

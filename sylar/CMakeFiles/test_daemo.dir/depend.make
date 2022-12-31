@@ -3,6 +3,7 @@
 
 CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o: sylar/config.h
 CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o: sylar/daemon.h
+CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o: sylar/env.h
 CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o: sylar/fiber.h
 CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o: sylar/hook.h
 CMakeFiles/test_daemo.dir/tests/test_daemo.cc.o: sylar/iomanager.h

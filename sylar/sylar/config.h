@@ -1,5 +1,6 @@
 #ifndef __SYLAR_CONFIG_H__
 #define __SYLAR__CONFIG_H__
+
 #include<iostream>
 #include <boost/exception/exception.hpp>
 #include <boost/mpl/assert.hpp>
@@ -18,7 +19,14 @@
 #include<boost/lexical_cast.hpp>
 #include <sys/types.h>
 #include"log.h"
+#include "env.h"
+#include "util.h"
 namespace sylar{
+
+static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
+static sylar::Logger::ptr GetGlog(){
+	return g_logger;
+}
 
 class ConfigVarBase{
 public:
@@ -322,8 +330,8 @@ public:
 	template<class T>
 	static typename ConfigVar<T>::ptr Lookup(const std::string& name ,const T& default_val
 			,const std::string& description = ""){
-		auto it = m_datas.find(name);
-		if( it != m_datas.end()){
+		auto it = GetDatas().find(name);
+		if( it != GetDatas().end()){
 			auto tmp = std::dynamic_pointer_cast<ConfigVar<T> >(it->second);
 			if(tmp){
 				return tmp;
@@ -333,14 +341,14 @@ public:
 		}
 
 		typename ConfigVar<T>::ptr v(new ConfigVar<T>(name,default_val,description));
-		m_datas[name] = v;
+		GetDatas()[name] = v;
 		return v;
 	}
 
 	template<class T>
 	static typename ConfigVar<T>::ptr Lookup(const std::string& name){
-		auto it = m_datas.find(name);
-		if(it == m_datas.end()){
+		auto it = GetDatas().find(name);
+		if(it == GetDatas().end()){
 			return nullptr;
 		}
 		return std::dynamic_pointer_cast<ConfigVar<T> >(it->second);
@@ -349,63 +357,18 @@ public:
 
 
 	static void LoadFromYaml(YAML::Node root);
+	static void LoadFromConDir(const std::string& path);
 	static ConfigVarBase::ptr LookupBase(const std::string& name);
+	static ConfigMap& GetDatas(){
+		static ConfigMap m_datas;
+		return m_datas;
+	}
 private:
-	static ConfigMap m_datas;
 
 };
-Config::ConfigMap Config::m_datas;
-
-
-ConfigVarBase::ptr Config::LookupBase(const std::string& name){
-        auto it = m_datas.find(name);
-        if(it != m_datas.end()){
-                return it->second;
-        }
-        return nullptr;
-
-}
 
 
 
-static void ListAllMember(std::string prefix,const YAML::Node& node, std::list<std::pair<std::string,const YAML::Node> >& output){
-        output.push_back(std::make_pair(prefix,node));
-        if(node.IsMap()){
-                for(auto it = node.begin();it != node.end();it++){
-                        ListAllMember(prefix.empty() ? it->first.Scalar() : (prefix + "." + it->first.Scalar()) , it->second , output);
-                }
-        }
-
-}
-
-
-void Config::LoadFromYaml(YAML::Node root){
-        std::list<std::pair<std::string,const YAML::Node> > all_nodes;
-        std::string str("");
-        ListAllMember(str,root,all_nodes);
-
-        for(auto it : all_nodes){
-                std::string key  = it.first;
-                if(key.empty()){
-                        continue;
-                }
-                ConfigVarBase::ptr val = LookupBase(it.first);
-                if(val){
-
-
-                        if(it.second.IsScalar()){
-                                std::string str(it.second.Scalar());
-                        }else{
-                                std::stringstream ss;
-                                ss << it.second;
-                                std::string str(ss.str());
-                                val->fromString(str);
-                        }
-                }
-
-
-        }
-}
 
 }
 

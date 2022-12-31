@@ -4,6 +4,7 @@
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o
  /home/dada/workspace/sylar/sylar/bytearray.h
  /home/dada/workspace/sylar/sylar/config.h
+ /home/dada/workspace/sylar/sylar/env.h
  /home/dada/workspace/sylar/sylar/fiber.h
  /home/dada/workspace/sylar/sylar/hook.h
  /home/dada/workspace/sylar/sylar/iomanager.h

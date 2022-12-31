@@ -92,7 +92,7 @@ void Socket::setRecvTimerout(uint64_t v){
 	struct timeval tv;
 	tv.tv_sec = (long)(v/1000);
 	tv.tv_usec = (long)(v % 1000 * 1000);
-	setOption(SOL_SOCKET,SO_SNDTIMEO,tv);
+	setOption(SOL_SOCKET,SO_RCVTIMEO,tv);
 
 	auto fdx = sylar::FdMgr::GetInstance()->get(m_sock);
 	fdx->setTimeout(SO_RCVTIMEO, v);
